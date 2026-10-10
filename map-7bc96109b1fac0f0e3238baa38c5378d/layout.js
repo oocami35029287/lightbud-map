@@ -1,10 +1,11 @@
 /* 可手動編輯。座標使用原圖 1536 × 1024 像素；本檔不改世界規則。 */
 window.LIGHTBUD_LAYOUT = {
   version: 1,
-  bounds: {x: -290, y: 0, width: 1826, height: 1024},
+  bounds: {x: 0, y: 0, width: 1536, height: 1024},
+  mobileFocus: {x:640, y:512},
   background: {src: 'assets/ephyra-base.png', x: 0, y: 0, width: 1536, height: 1024, opacity: 1},
   placements: {
-    white: {x:-155,y:370}, 'white-home':{x:-160,y:440}, 'white-room':{x:-160,y:500},
+    'white-rift':{x:358,y:411,labelDx:-18,labelDy:22},
     mush: {x:425,y:258}, king:{x:550,y:239,labelDx:24,labelDy:-8},
     garden:{x:545,y:354,labelDx:28,labelDy:20}, 'garden-inner':{x:565,y:370},
     home:{x:351,y:283,labelDx:-18,labelDy:-14},
@@ -34,6 +35,7 @@ window.LIGHTBUD_LAYOUT = {
     'mush/home/road': [[389,265]],
     'mush/garden/road': [[478,288],[510,324]],
     'garden/ruin-floor-4/road': [[621,399],[659,420]],
+    'ruin-floor-4/white-rift/road': [[595,430],[490,425],[409,433]],
     'ruin-floor-4/ruin-floor-3/road': [[724,484],[722,527]],
     'ruin-floor-3/ruin-floor-2/road': [[766,608],[725,632]],
     'ruin-floor-2/hollow-bud/road': [[624,656],[583,670]],

@@ -15,3 +15,11 @@ input[type=checkbox]{accent-color:#697586}
 #card h3,#card strong{color:#30343b}#card p{color:#606873}#card .tag{color:#818995}#card a{color:#50677f}
 .zoom-controls button{background:#fffffff0}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.route-casing{fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.header-actions{display:flex;align-items:center;gap:16px}.world-tabs{display:flex;gap:5px;align-items:center}
+.world-tabs a{display:block;padding:8px 12px;color:#737981;text-decoration:none;font-size:12px;border-radius:4px}
+.world-tabs a:hover{background:#f3f5f7}.world-tabs a[aria-current="page"]{color:#30343b;box-shadow:inset 0 -2px #788594}
+.rift-symbol{fill:#fff8e8;stroke:#4b5965;stroke-width:2}
+#card .world-link{display:block;margin-top:18px;padding:10px 12px;border:1px solid #d8dde4;text-align:center;text-decoration:none;border-radius:4px;background:#f7f9fb}
+#white-map{flex:1;min-width:0;min-height:0;background:#fff}.white-world main{background:#fff}
+@media(max-width:800px){header{padding:12px 14px}h1 span{display:none}.header-actions{gap:7px}.world-tabs a{padding:7px 8px;font-size:11px}.eyebrow{font-size:8px;letter-spacing:1.5px}h1{font-size:19px;letter-spacing:2px}}

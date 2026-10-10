@@ -41,6 +41,15 @@ window.LIGHTBUD_DATA = (() => {
     {from:'garden',to:'hollow-bud',type:'road',note:'取得燈籠後趕往空心之芽的行程示意；沿途地點待補，與菌路分開記錄。'},
     {from:'mush',to:'trade',type:'road',note:'已採用的出村前往交易據點旅程；沿途地點待補。'});
   const layout=window.LIGHTBUD_LAYOUT;
+  // 白域另頁留空；原生活場所留作參考，不在艾菲拉繪製，也不當成被廢止。
+  const whiteReference=nodes.filter(n=>['white','white-home','white-room'].includes(n.id));
+  for(let i=nodes.length-1;i>=0;i--)if(whiteReference.includes(nodes[i]))nodes.splice(i,1);
+  add('white-rift','通往白域的裂縫',0,0,1,'跨界入口',
+    '位於地表遺境第四層、使用者圖上紅叉指定的位置。通往另一個獨立世界白域。',
+    '白域地圖的入口；白域另頁，目前不繪製內部場所。','ruin','已採用',
+    '入口位置由使用者指定；實際開啟方式、通行條件及跨界時間規則仍待確認。');
+  nodes.find(n=>n.id==='white-rift').destination='white.html';
+  edges.push({from:'ruin-floor-4',to:'white-rift',type:'road',note:'第四層裂縫入口的圖上通行示意；具體出入口與關卡條件待設計。'});
   /* 每層有一關卡節點；名稱是功能標籤，關卡機制仍待設計。 */
   for(let floor=1;floor<=4;floor++)add('ruin-floor-'+floor,'第'+floor+'層關卡',0,0,2,'關卡節點',
     '地表遺境由下往上第'+floor+'層的探索關卡。'+(floor===2?'空心之芽位於本層的一個孢室。':''),
@@ -64,5 +73,5 @@ window.LIGHTBUD_DATA = (() => {
     note:'遺跡內部目前不可進入；未將教團設定為知情者。如何接觸或修復穩定器待設計。'});
   const treeLink=edges.find(e=>e.from==='garden'&&e.to==='tree-stabilizer'&&e.type==='life');
   treeLink.note='沉韻之庭的地下孢絲穿行於地底建築結構間，延伸至聖樹根部與其覆蓋的穩定器遺跡；這段菌路目前封鎖，不是人物通道。';
-  return {version:4,source,notes:'艾菲拉橫幅墨水地圖。依採納底圖配置，具體場所和線路走向仍為介面示意，parent 不自動生成道路。',nodes,edges,backgrounds:[layout.background],bounds:layout.bounds};
+  return {version:5,source,notes:'艾菲拉橫幅墨水地圖。依採納底圖配置，具體場所和線路走向仍為介面示意，parent 不自動生成道路。白域另頁留空，第四層為裂縫入口。',nodes,edges,referenceNodes:whiteReference,backgrounds:[layout.background],bounds:layout.bounds};
 })();
