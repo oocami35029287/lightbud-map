@@ -40,5 +40,29 @@ window.LIGHTBUD_DATA = (() => {
     {from:'mush',to:'garden',type:'road',note:'前往菌王根部沉韻之庭的旅程示意；沿途地點與進入方式待補。'},
     {from:'garden',to:'hollow-bud',type:'road',note:'取得燈籠後趕往空心之芽的行程示意；沿途地點待補，與菌路分開記錄。'},
     {from:'mush',to:'trade',type:'road',note:'已採用的出村前往交易據點旅程；沿途地點待補。'});
-  return {version:3,source,notes:'依本聊天最新澄清補入菌王株—沉韻之庭—空心之芽關係；對應雲端設定修訂尚待上傳。非全歷史場所盤點；所有座標與線條走向為示意，parent 只表示場所歸屬。',nodes,edges,backgrounds:[]};
+  const layout=window.LIGHTBUD_LAYOUT;
+  /* 每層有一關卡節點；名稱是功能標籤，關卡機制仍待設計。 */
+  for(let floor=1;floor<=4;floor++)add('ruin-floor-'+floor,'第'+floor+'層關卡',0,0,2,'關卡節點',
+    '地表遺境由下往上第'+floor+'層的探索關卡。'+(floor===2?'空心之芽位於本層的一個孢室。':''),
+    '呈現層間探索與關卡進程；具體操作尚待設計。','ruin','已採用',
+    '使用者指定每層一個節點。具體入口、機制與場景名稱待確認；第一層通路尚未定案。');
+  const oldHollowRoad=edges.findIndex(e=>e.from==='garden'&&e.to==='hollow-bud'&&e.type==='road');
+  if(oldHollowRoad>=0)edges.splice(oldHollowRoad,1);
+  for(const [from,to]of [['garden','ruin-floor-4'],['ruin-floor-4','ruin-floor-3'],['ruin-floor-3','ruin-floor-2'],['ruin-floor-2','hollow-bud']])
+    edges.push({from,to,type:'road',note:'前往第二層空心之芽須經多個關卡；圖上行程為待細化的通行示意，精確出入口與操作待設計。'});
+  for(const n of nodes) Object.assign(n,layout.placements[n.id]||{});
+  for(const e of edges) e.points=layout.routes[e.from+'/'+e.to+'/'+e.type]||[];
+  nodes.find(n=>n.id==='mush').description='建立於地表遺境頂部的菌類共生聚落。地表由菌絲形成並完全覆蓋舊城市，僅偶見遺物。';
+  nodes.find(n=>n.id==='tree').description='北方隆起台地上的聖樹城邦，台地高於蘑丘與城市遺境，巨木上有居民生活與魔法設施。';
+  nodes.find(n=>n.id==='ruin').description='草木覆蓋的現代城市遺境，主要建築地表堆疊為四層；沼原接近結構處的基準地表亦留有最早城市廢墟。';
+  nodes.find(n=>n.id==='marsh').description='基準地表的沼澤、水路與牧群生態；接近層疊城市處可見早期城市遺跡。';
+  Object.assign(nodes.find(n=>n.id==='hollow-bud'),{level:1,parent:'ruin',
+    description:'位於地表遺境第二層的一個孢室。璃璃帶著燈籠，穿越多個層間關卡後抵達；此時與菌王根部的菌路尚未中斷。',
+    note:'第二層孢室與每層一個關卡節點已指定；孢室外形及具體關卡操作為待設計。'});
+  Object.assign(nodes.find(n=>n.id==='tree-stabilizer'),{kind:'被覆蓋的穩定器遺跡',
+    description:'聖樹底部不可進入的古代穩定器遺跡，原建於地表，現在完全被聖樹覆蓋。當地教團出於單純信仰保護此處，未曾進入，也不知道內部發生什麼。',
+    note:'遺跡內部目前不可進入；未將教團設定為知情者。如何接觸或修復穩定器待設計。'});
+  const treeLink=edges.find(e=>e.from==='garden'&&e.to==='tree-stabilizer'&&e.type==='life');
+  treeLink.note='沉韻之庭的地下孢絲穿行於地底建築結構間，延伸至聖樹根部與其覆蓋的穩定器遺跡；這段菌路目前封鎖，不是人物通道。';
+  return {version:4,source,notes:'艾菲拉橫幅墨水地圖。依採納底圖配置，具體場所和線路走向仍為介面示意，parent 不自動生成道路。',nodes,edges,backgrounds:[layout.background],bounds:layout.bounds};
 })();
