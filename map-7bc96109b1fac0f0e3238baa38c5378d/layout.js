@@ -1,19 +1,37 @@
-/* 可手改的 1536 × 1024 美術配置；非正式地理座標。 */
-window.LIGHTBUD_LAYOUT={version:2,bounds:{x:0,y:0,width:1536,height:1024},mobileFocus:{x:650,y:510},background:{src:'assets/ephyra-bible-v2.png',x:0,y:0,width:1536,height:1024,opacity:1},placements:{
- 'white-rift':{x:303,y:381,labelDx:-18,labelDy:20},
- mush:{x:342,y:273},king:{x:529,y:227,labelDx:22,labelDy:-12},garden:{x:457,y:318,labelDx:-15,labelDy:23},
- tree:{x:1135,y:200},'sacred-tree':{x:1175,y:132,labelDx:18,labelDy:0},'root-ruins':{x:1185,y:320,labelDx:20,labelDy:16},'tree-stabilizer':{x:1225,y:360,labelDx:20,labelDy:15},
- ruin:{x:215,y:546},wind:{x:783,y:322},sleep:{x:535,y:392},woven:{x:729,y:532},mist:{x:623,y:642},foundation:{x:648,y:772},
- 'hollow-bud':{x:387,y:375,labelDx:-18,labelDy:15},'mush-equipment':{x:588,y:429,labelDx:20,labelDy:18},'mush-stabilizer':{x:624,y:451,labelDx:20,labelDy:18},
- marsh:{x:1142,y:895},'marsh-stabilizer':{x:1127,y:778,labelDx:20,labelDy:20},'ruin-stabilizer':{x:516,y:798,labelDx:-18,labelDy:23},'outer-forest':{x:1362,y:660,labelDx:-18,labelDy:-20}
- },routes:{
- 'king/garden/structure':[[514,290]],'garden/hollow-bud/life':[[436,344],[398,354]],
- 'garden/mush-stabilizer/life':[[478,365],[540,397],[600,412]],
- 'garden/tree-stabilizer/life':[[478,365],[740,446],[1010,453],[1155,405]],
- 'garden/ruin-stabilizer/life':[[478,365],[500,517],[464,675]],
- 'garden/marsh-stabilizer/life':[[478,365],[740,446],[959,606],[1057,725]],
- 'garden/sacred-tree/life':[[478,365],[740,446],[1010,453],[1125,334],[1166,230]],
- 'mush/garden/road':[[368,289],[406,305]],'mush/hollow-bud/road':[[305,313],[298,345],[333,365]],
- 'mush/mush-equipment/road':[[372,303],[500,333],[556,367],[566,406]],'tree/root-ruins/road':[[1206,232],[1227,268]],
- 'mush-stabilizer/marsh-stabilizer/story':[[863,637]],'marsh-stabilizer/tree-stabilizer/story':[[1300,561]],'tree-stabilizer/ruin-stabilizer/story':[[998,542],[792,729]]
- }};
+/* Illustration-relative cartography, not surveyed GPS coordinates. Base: author's 大地圖.png (1538 × 1022). */
+window.LIGHTBUD_LAYOUT={
+ version:3,
+ bounds:{x:0,y:0,width:1538,height:1022},mobileFocus:{x:740,y:470},
+ background:{src:'assets/ephyra-bible-v2.png',x:0,y:0,width:1538,height:1022,opacity:1},
+ overlays:[
+  {id:'garden',label:'沉韻之庭',asset:'garden',x:523,y:250,width:255,height:168,opacity:.97,visible:true,zIndex:1},
+  {id:'hollow-bud',label:'群息之庭',asset:'hollow-bud',x:511,y:412,width:284,height:210,opacity:.98,visible:true,zIndex:2}
+ ],
+ placements:{
+  mush:{x:558,y:320,labelDx:-36,labelDy:-15},king:{x:650,y:218,labelDx:19,labelDy:-13},
+  garden:{x:650,y:366,labelDx:20,labelDy:23},ruin:{x:380,y:580},
+  wind:{x:816,y:374,labelDx:18,labelDy:13},sleep:{x:566,y:451,labelDx:-25,labelDy:12},
+  woven:{x:531,y:602,labelDx:-18,labelDy:15},mist:{x:494,y:712,labelDx:-20,labelDy:17},
+  foundation:{x:462,y:821,labelDx:-10,labelDy:23},'hollow-bud':{x:650,y:490,labelDx:18,labelDy:20},
+  'mush-equipment':{x:700,y:540,labelDx:15,labelDy:20},'mush-stabilizer':{x:729,y:578,labelDx:15,labelDy:20},
+  highland:{x:955,y:328,labelDx:20,labelDy:15},
+  tree:{x:1179,y:224},'sacred-tree':{x:1174,y:122,labelDx:22,labelDy:-14},
+  'root-ruins':{x:1145,y:322,labelDx:26,labelDy:15},'tree-stabilizer':{x:1187,y:364,labelDx:20,labelDy:19},
+  marsh:{x:1136,y:828},'marsh-stabilizer':{x:1052,y:782,labelDx:-17,labelDy:23},
+  'ruin-stabilizer':{x:514,y:782,labelDx:-20,labelDy:22},
+  'outer-forest':{x:1383,y:753,labelDx:-26,labelDy:23}
+ },
+ routes:{
+  'king/garden/structure':[[664,265],[663,312]],
+  'garden/hollow-bud/life':[[650,412],[652,450]],
+  'garden/mush-stabilizer/life':[[691,427],[714,499]],
+  'garden/tree-stabilizer/life':[[829,448],[1025,460]],
+  'garden/ruin-stabilizer/life':[[579,503],[537,656]],
+  'garden/marsh-stabilizer/life':[[840,600],[1028,715]],
+  'garden/sacred-tree/life':[[861,318],[1094,220]],
+  'sacred-tree/tree-stabilizer/facility':[[1170,245],[1178,306]],
+  'mush/highland/road':[[713,329],[827,305]],
+  'highland/wind/road':[[908,339],[864,359]],
+  'highland/tree/road':[[1031,288],[1093,250]]
+ }
+};
