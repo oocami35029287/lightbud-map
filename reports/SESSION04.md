@@ -62,6 +62,6 @@
 
 ## 測試版本使用
 
-下載 GitHub PR workflow 的 lightbud-world-site-review artifact 或本次交付 ZIP，解壓後在其根目錄執行 `python -m http.server 8000`，開啟 `http://localhost:8000/map-7bc96109b1fac0f0e3238baa38c5378d/`。ES Modules／JSON fetch 需 HTTP，不能直接 file:// 打開。
+下載本次交付 ZIP 後在解壓根目錄執行 `python -m http.server 8000`；若使用 GitHub PR workflow 的 lightbud-world-site-review artifact，須先進入其中的 `dist/` 目錄，再執行同一指令。開啟 `http://localhost:8000/map-7bc96109b1fac0f0e3238baa38c5378d/`。ES Modules／JSON fetch 需 HTTP，不能直接 file:// 打開。
 
 開發者從分支 checkout：`npm run check`、`npm run build`；瀏覽器測試需 Playwright 1.56.1 與 Chromium，先啟動 root 的 8765 HTTP server，再 `npm run test:browser`。可用 TEST_SITE_URL 和 CHROMIUM_PATH 指定環境。
