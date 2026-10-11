@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>互動地圖｜光芽之夢</title><link rel="stylesheet" href="style.css?v=20261011-bible2"><link rel="stylesheet" href="map-extra.css"></head>
+<body>
+<header><div><span class="eyebrow">LIGHTBUD / WORLD ATLAS</span><h1>光芽之夢 <span>艾菲拉世界地圖</span></h1></div><div class="header-actions"><nav class="world-tabs" aria-label="網站導航"><a href="index.html">首頁</a><a href="world.html">世界</a><a href="map.html" aria-current="page">艾菲拉地圖</a><a href="white.html">白域</a><a href="characters.html">角色</a><a href="ecology.html">生態</a><a href="organizations.html">組織</a><a href="civilization.html">文明</a></nav><button id="toggle-sidebar" aria-label="開關地圖工具">地圖工具 ☰</button></div></header>
+<main>
+<aside id="sidebar"><label class="search-label" for="search">尋找場所</label><input id="search" type="search" placeholder="名稱或功能…" autocomplete="off"><div id="results" aria-live="polite"></div>
+<h2>地圖圖層</h2><div id="layers"></div>
+<div class="legend"><p><i class="dashed"></i>深墨線：已知行程，走向為示意</p><p><i class="solid"></i>細脈線：魔素／訊號，不是道路</p><p>◇ 穩定器　◇ 虛框：位置待定</p><p>網路是否連通、道路是否可走及禁區許可分開判斷。</p><p>白域另頁瀏覽；切頁不表示故事中可跨界。</p></div><h2>場景疊圖</h2><div id="overlay-controls"></div><details id="background-controls"><summary>替換底圖</summary><label class="file-button">載入手動修改的圖片<input id="background-file" type="file" accept="image/png,image/jpeg,image/webp"></label><p id="background-name">作者新版大地圖</p><div class="bg-grid"><label>X<input id="bg-x" type="number" value="0"></label><label>Y<input id="bg-y" type="number" value="0"></label><label>寬度<input id="bg-width" type="number" min="1" value="1538"></label><label>透明度<input id="bg-opacity" type="range" min="0" max="1" step="0.05" value="1"></label></div><button id="remove-bg">恢復原底圖</button><p class="hint">圖片僅在本次預覽替換；原圖始終保留。新版底圖為 1538 × 1022 畫布；圖片與地理標記分開儲存。</p></details>
+<details id="editing-controls"><summary>調整場所位置</summary><label class="edit-label"><input id="edit-mode" type="checkbox">啟用拖曳編輯</label><button id="export-layout">匯出位置 JSON</button><label class="file-button">載入位置 JSON<input id="layout-file" type="file" accept="application/json,.json"></label><p id="edit-status" class="hint" aria-live="polite">位置修改僅保留於本次預覽。</p><p class="hint">開啟編輯會顯示全部場所。匯出後可保存，之後載入繼續調整；不會自動發布。</p></details>
+<div class="sidebar-foot">底圖、地名與裝飾分開保存。<br>縮放可逐步顯示具體場所。</div></aside>
+<section id="map-area" aria-label="可拖曳縮放的艾菲拉世界地圖"><svg id="map" role="img" aria-label="艾菲拉世界地圖與獨立圖層">
+<g id="world"><g id="backgrounds"></g><g id="landmarks" pointer-events="none"></g>
+<g id="decorations" aria-label="標題與指南針圖層" pointer-events="none">
+<text class="atlas-title" x="120" y="64">艾菲拉</text><text class="atlas-subtitle" x="120" y="88">光芽之夢 · 世界圖誌</text>
+<g transform="translate(116 157)" class="compass"><circle r="38" fill="none"/><circle r="28" fill="none"/><path d="M 0 -48 L 10 0 L 0 48 L -10 0 Z M -43 0 L 0 -8 L 43 0 L 0 8 Z" fill="#f0d9b6"/><path d="M 0 -48 L 10 0 L 0 0 Z M -43 0 L 0 -8 L 0 0 Z" fill="#60462d"/><text x="0" y="-58" text-anchor="middle">北</text><text x="53" y="4">東</text><text x="0" y="66" text-anchor="middle">南</text><text x="-64" y="4">西</text></g>
+</g><g id="edges"></g><g id="nodes"></g></g></svg>
+<div class="map-caption"><span id="scope">艾菲拉總覽</span><small id="counts"></small></div>
+<div class="zoom-controls"><button id="zoom-in" aria-label="放大">＋</button><button id="zoom-out" aria-label="縮小">−</button><button id="fit">總覽</button><output id="zoom-level">100%</output></div>
+<div class="map-help">單指拖曳 · 雙指縮放 · 滾輪縮放 · 點選查看</div>
+<article id="card" hidden aria-live="polite"><button id="close-card" aria-label="關閉描述">×</button><div id="card-body"></div></article>
+</section></main>
+<footer><span>孢絲輸送 · 穩定器調節 · 實體交通與菌網訊號分層</span><span id="status">資料載入中</span></footer>
+<script src="layout.js?v=site1"></script><script src="public-canon.js"></script><script src="data.js?v=site1"></script><script src="map-assets.js"></script><script src="app.js?v=site1"></script>
+</body></html>
