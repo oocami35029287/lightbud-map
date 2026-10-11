@@ -21,6 +21,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: lightbud-world-site-review
+          include-hidden-files: true
           path: |
             dist
             .test-output/browser-results.json
