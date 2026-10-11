@@ -1,6 +1,6 @@
 # Session 04｜世界觀網站 v1 候審交付
 
-狀態：工程完成，待作者審查 PR；沒有合併 main、沒有發布正式新版，也沒有修改世界法典。
+狀態：工程候審，PR #1：https://github.com/oocami35029287/lightbud-map/pull/1 。開發分支 feat/session04-world-site；沒有合併 main、沒有發布正式新版，也沒有修改世界法典。
 
 ## 核對版本與既有工作
 
