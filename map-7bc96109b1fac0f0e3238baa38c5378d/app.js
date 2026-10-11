@@ -5,7 +5,7 @@
   const nodeLayer=document.querySelector('#nodes'),edgeLayer=document.querySelector('#edges'),bgLayer=document.querySelector('#backgrounds');
   const card=document.querySelector('#card'),body=document.querySelector('#card-body');
   const NS='http://www.w3.org/2000/svg',byId=new Map(),nodeElements=new Map(),edgeElements=[];
-  const layers={road:{name:'行走路線（走向示意）',enabled:true},life:{name:'魔素網路（功能示意）',enabled:false},structure:{name:'菌王地表與根部',enabled:true},story:{name:'四地修復順序',enabled:false}};
+  const layers={road:{name:'實體交通（路形示意）',enabled:true},life:{name:'菌網／魔素訊號（非道路）',enabled:false},structure:{name:'菌王地表與根部',enabled:true},facility:{name:'生命與設備連結',enabled:false}};
   const thresholds=[0,.85,1.5,2.6];
   let view={x:0,y:0,k:1},baseScale=1,pinned=null,hover=null,drag=null,nodeDrag=null,editing=false;
   let backgroundURL=null,backgroundImage=null,bgAspect=1.5,ready=false,suppressClick=false;
@@ -17,7 +17,16 @@
     bgLayer.replaceChildren();
     if(backgroundImage)bgLayer.append(backgroundImage);
     else for(const bg of data.backgrounds)bgLayer.append(el('image',{href:bg.src,x:bg.x,y:bg.y,width:bg.width,height:bg.height,opacity:bg.opacity??1,preserveAspectRatio:'none'}));
+    for(const ov of (layout.overlays||[])){
+      const src=window.LIGHTBUD_ART_ASSETS?.[ov.asset];
+      if(ov.visible&&src)bgLayer.append(el('image',{href:src,x:ov.x,y:ov.y,width:ov.width,height:ov.height,opacity:ov.opacity,preserveAspectRatio:'xMidYMid meet','data-overlay-id':ov.id}));
+    }
   }
+  window.addEventListener('lightbud-assets-ready',()=>{
+    if(window.LIGHTBUD_ART_ASSETS?.base)layout.background.src=window.LIGHTBUD_ART_ASSETS.base;
+    drawBackgrounds();
+    document.querySelector('#background-name').textContent=window.LIGHTBUD_ART_ASSETS?.base?'作者新版大地圖':'原地圖（新版素材尚未載入）';
+  });
   drawBackgrounds();
   for(const e of data.edges){
     if(!byId.has(e.from)||!byId.has(e.to)||!layers[e.type])throw new Error('連線資料錯誤');
@@ -25,7 +34,7 @@
     const halo=el('path',{class:'route-casing',stroke:road?'#fff3d9':'#ead2ad','stroke-width':road?7:4.2,'stroke-opacity':road?0.9:0.65});
     const p=el('path',{class:'edge',stroke:story?'#863b28':road?'#402719':e.type==='structure'?'#756344':'#426653','stroke-width':road?3.6:2.2,'stroke-dasharray':story?'8 5':e.type==='life'?'2 4':'','marker-end':story?'url(#story-arrow)':''});
     Object.assign(p.dataset,{type:e.type,from:e.from,to:e.to,status:e.status||'open'});
-    const marker=e.status==='locked'?el('g',{class:'connection-lock','aria-label':'封鎖菌路'}):null;
+    const marker=e.status==='locked'?el('g',{class:'connection-lock','aria-label':e.type==='road'?'道路封閉':e.type==='life'?'菌網訊號封鎖':'連線受限'}):null;
     if(marker){const box=el('rect',{x:-16,y:-9,width:32,height:18,rx:3,fill:'#f2dfc0',stroke:'#8d7864'}),label=el('text',{'text-anchor':'middle',y:3,fill:'#6c5744','font-size':9});label.textContent='封鎖';marker.append(box,label);}
     edgeLayer.append(halo,p);if(marker)edgeLayer.append(marker);edgeElements.push({edge:e,element:p,marker,halo});
   }
@@ -152,6 +161,14 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){pinned=null;hover=null;card.hidden=true;renderHighlight();}if(e.target.matches('input,textarea,button'))return;if(e.key==='+'||e.key==='=')zoom(1.4);if(e.key==='-')zoom(1/1.4);});
   const layersRoot=document.querySelector('#layers');
   for(const [key,l]of Object.entries(layers)){const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.checked=l.enabled;input.dataset.layer=key;input.onchange=()=>{l.enabled=input.checked;render();};label.append(input,document.createTextNode(l.name));layersRoot.append(label);}
+
+  const overlayRoot=document.querySelector('#overlay-controls');
+  if(overlayRoot)for(const ov of (layout.overlays||[])){
+    const label=document.createElement('label'),input=document.createElement('input');
+    input.type='checkbox';input.checked=ov.visible;input.dataset.overlay=ov.id;
+    input.onchange=()=>{ov.visible=input.checked;drawBackgrounds();};
+    label.append(input,document.createTextNode(ov.label));overlayRoot.append(label);
+  }
   for(const [key,name,target]of [['labels','地名文字','#nodes'],['decorations','標題與指南針','#decorations'],['places','場所符號','#nodes'],['landmarks','孢室地標','#landmarks']]){
     const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.checked=true;input.dataset.layer=key;
     input.onchange=()=>{if(key==='labels')svg.classList.toggle('labels-hidden',!input.checked);else document.querySelector(target).style.visibility=input.checked?'':'hidden';};label.append(input,document.createTextNode(name));layersRoot.append(label);
@@ -176,20 +193,20 @@
   document.querySelector('#edit-mode').onchange=e=>{editing=e.target.checked;hover=null;pinned=null;card.hidden=true;svg.classList.toggle('editing',editing);document.querySelector('#edit-status').textContent=editing?'拖曳場所可調整位置；完成後匯出。':'位置修改僅保留於本次預覽。';render();};
   document.querySelector('#export-layout').onclick=()=>{
     const placements=Object.fromEntries(data.nodes.map(n=>[n.id,{x:n.x,y:n.y,...(n.labelDx===undefined?{}:{labelDx:n.labelDx}),...(n.labelDy===undefined?{}:{labelDy:n.labelDy})}]));
-    const snapshot={version:2,placements,routes:Object.fromEntries(data.edges.map(e=>[e.from+'/'+e.to+'/'+e.type,e.points||[]])),background:backgroundImage?{...layout.background,x:+backgroundImage.getAttribute('x'),y:+backgroundImage.getAttribute('y'),width:+backgroundImage.getAttribute('width'),height:+backgroundImage.getAttribute('height'),opacity:+backgroundImage.getAttribute('opacity')}:layout.background};
+    const snapshot={version:3,placements,routes:Object.fromEntries(data.edges.map(e=>[e.from+'/'+e.to+'/'+e.type,e.points||[]])),background:backgroundImage?{...layout.background,x:+backgroundImage.getAttribute('x'),y:+backgroundImage.getAttribute('y'),width:+backgroundImage.getAttribute('width'),height:+backgroundImage.getAttribute('height'),opacity:+backgroundImage.getAttribute('opacity')}:layout.background};
     const url=URL.createObjectURL(new Blob([JSON.stringify(snapshot,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='ephyra-layout.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.querySelector('#edit-status').textContent='已匯出位置。底圖圖片需另外保存；匯出不會更新網站。';
   };
   document.querySelector('#layout-file').onchange=async e=>{
     const file=e.target.files[0];if(!file)return;
     try{
-      const imported=JSON.parse(await file.text());if(imported.version!==2||!imported.placements)throw Error('版本不符');
+      const imported=JSON.parse(await file.text());if(imported.version!==3||!imported.placements)throw Error('版本不符');
       for(const [id,p]of Object.entries(imported.placements)){if((!byId.has(id)&&!data.referenceNodes?.some(n=>n.id===id))||!p||!Number.isFinite(p.x)||!Number.isFinite(p.y)||Math.abs(p.x)>100000||Math.abs(p.y)>100000||['labelDx','labelDy'].some(k=>p[k]!==undefined&&!Number.isFinite(p[k])))throw Error('位置資料不符');}
       if(imported.routes)for(const [key,points]of Object.entries(imported.routes)){if(!data.edges.some(e=>e.from+'/'+e.to+'/'+e.type===key)||!Array.isArray(points)||points.length>100||points.some(p=>!Array.isArray(p)||p.length!==2||!p.every(Number.isFinite)))throw Error('路線資料不符');}
       for(const [id,p]of Object.entries(imported.placements)){const n=byId.get(id);if(!n)continue;n.x=p.x;n.y=p.y;if(p.labelDx!==undefined)n.labelDx=p.labelDx;if(p.labelDy!==undefined)n.labelDy=p.labelDy;}
       if(imported.routes)for(const edge of data.edges){const points=imported.routes[edge.from+'/'+edge.to+'/'+edge.type];if(points)edge.points=points;}
       if(imported.background){const b=imported.background;if(['x','y','width','height','opacity'].every(k=>Number.isFinite(b[k]))&&b.width>0&&b.height>0&&b.opacity>=0&&b.opacity<=1){Object.assign(layout.background,{x:b.x,y:b.y,width:b.width,height:b.height,opacity:b.opacity});document.querySelector('#bg-x').value=b.x;document.querySelector('#bg-y').value=b.y;document.querySelector('#bg-width').value=b.width;document.querySelector('#bg-opacity').value=b.opacity;if(backgroundImage){bgAspect=b.width/b.height;updateBackground();}else drawBackgrounds();}}
       render();document.querySelector('#edit-status').textContent='已載入位置配置（本次預覽）。';
-    }catch{document.querySelector('#edit-status').textContent='配置無法讀取：請使用本版匯出的版本 2 JSON；舊版層位已變更。';}
+    }catch{document.querySelector('#edit-status').textContent='配置無法讀取：請使用本版匯出的版本 3 JSON；舊版層位已變更。';}
     e.target.value='';
   };
   document.querySelector('#toggle-sidebar').onclick=()=>{document.body.classList.toggle('sidebar-open');setTimeout(fit,0);};
@@ -201,8 +218,5 @@
     viewportSize={width:r.width,height:r.height};render();
   }).observe(area);fit();
   document.querySelector('#status').textContent=data.nodes.length+' 個標記 · 2 座穩定器位置待定';
- const storyRoot=document.querySelector('#story-list');let eventId=data.story.head;const seen=new Set();
- while(eventId){if(seen.has(eventId))throw Error('故事鏈循環');seen.add(eventId);const item=data.story.items[eventId],entry=data.canon.entries[eventId];const button=document.createElement('button');button.textContent=entry.name;button.dataset.eventId=eventId;button.onclick=()=>{if(item.place)locate(byId.get(item.place));body.replaceChildren();const h=document.createElement('h3');h.textContent=entry.name;body.append(h,line('事件',entry.fields['事件']));if(entry.fields['成果'])body.append(line('成果',entry.fields['成果']));card.hidden=false;};storyRoot.append(button);eventId=item.next;}
- for(const id of data.story.separate){const entry=data.canon.entries[id],p=document.createElement('p');p.textContent=entry.name+'：'+entry.fields['事件'];document.querySelector('#story-separate').append(p);}
 
 })();
