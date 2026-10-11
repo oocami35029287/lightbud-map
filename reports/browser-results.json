@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "Route index 1440",
+    "Route world 1440",
+    "Route characters 1440",
+    "Route ecology 1440",
+    "Route organizations 1440",
+    "Route civilization 1440",
+    "Route map 1440",
+    "Route white 1440",
+    "Route index 390",
+    "Route world 390",
+    "Route characters 390",
+    "Route ecology 390",
+    "Route organizations 390",
+    "Route civilization 390",
+    "Route map 390",
+    "Route white 390",
+    "Catalog search, details, Escape, relation mode and atlas links",
+    "Atlas deep link, search, zoom, independent base/network layers",
+    "Overlay edit/hide/show, versioned JSON export, valid import and atomic invalid rejection",
+    "Mobile pan, keyboard pan, permanent-ID search and tool dismissal",
+    "Reduced motion disables parallax and particles"
+  ],
+  "errors": []
+}

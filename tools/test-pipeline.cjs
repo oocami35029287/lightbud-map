@@ -1,0 +1,4 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),{parse,build}=require('./build-public.cjs');
+// Explicitly synthetic fixtures; never imported into the public catalog.
+const valid='### WRD-900｜Synthetic fixture\n- 定義：Test only.\n- 關聯：WRD-901。\n\n### WRD-901｜Synthetic target\n- 定義：Test only.\n';assert.equal(Object.keys(parse(valid)).length,2);assert.throws(()=>parse(valid+'\n### WRD-900｜Duplicate fixture\n- 定義：Test only.\n'),/Duplicate/);assert.throws(()=>parse(valid.replace('WRD-901。','WRD-902。')),/Missing/);
+const temp=path.join(fs.mkdtempSync(path.join(os.tmpdir(),'lightbud-test-')),'candidate.md');fs.writeFileSync(temp,valid);assert.throws(()=>build(temp),/Unreviewed source version/);fs.rmSync(path.dirname(temp),{recursive:true});console.log('PASS: duplicate IDs, broken references, and unreviewed source version are rejected.');

@@ -1,19 +1,120 @@
-/* 可手改的 1536 × 1024 美術配置；非正式地理座標。 */
-window.LIGHTBUD_LAYOUT={version:2,bounds:{x:0,y:0,width:1536,height:1024},mobileFocus:{x:650,y:510},background:{src:'assets/ephyra-bible-v2.png',x:0,y:0,width:1536,height:1024,opacity:1},placements:{
- 'white-rift':{x:303,y:381,labelDx:-18,labelDy:20},
- mush:{x:342,y:273},king:{x:529,y:227,labelDx:22,labelDy:-12},garden:{x:457,y:318,labelDx:-15,labelDy:23},
- tree:{x:1135,y:200},'sacred-tree':{x:1175,y:132,labelDx:18,labelDy:0},'root-ruins':{x:1185,y:320,labelDx:20,labelDy:16},'tree-stabilizer':{x:1225,y:360,labelDx:20,labelDy:15},
- ruin:{x:215,y:546},wind:{x:783,y:322},sleep:{x:535,y:392},woven:{x:729,y:532},mist:{x:623,y:642},foundation:{x:648,y:772},
- 'hollow-bud':{x:387,y:375,labelDx:-18,labelDy:15},'mush-equipment':{x:588,y:429,labelDx:20,labelDy:18},'mush-stabilizer':{x:624,y:451,labelDx:20,labelDy:18},
- marsh:{x:1142,y:895},'marsh-stabilizer':{x:1127,y:778,labelDx:20,labelDy:20},'ruin-stabilizer':{x:516,y:798,labelDx:-18,labelDy:23},'outer-forest':{x:1362,y:660,labelDx:-18,labelDy:-20}
- },routes:{
- 'king/garden/structure':[[514,290]],'garden/hollow-bud/life':[[436,344],[398,354]],
- 'garden/mush-stabilizer/life':[[478,365],[540,397],[600,412]],
- 'garden/tree-stabilizer/life':[[478,365],[740,446],[1010,453],[1155,405]],
- 'garden/ruin-stabilizer/life':[[478,365],[500,517],[464,675]],
- 'garden/marsh-stabilizer/life':[[478,365],[740,446],[959,606],[1057,725]],
- 'garden/sacred-tree/life':[[478,365],[740,446],[1010,453],[1125,334],[1166,230]],
- 'mush/garden/road':[[368,289],[406,305]],'mush/hollow-bud/road':[[305,313],[298,345],[333,365]],
- 'mush/mush-equipment/road':[[372,303],[500,333],[556,367],[566,406]],'tree/root-ruins/road':[[1206,232],[1227,268]],
- 'mush-stabilizer/marsh-stabilizer/story':[[863,637]],'marsh-stabilizer/tree-stabilizer/story':[[1300,561]],'tree-stabilizer/ruin-stabilizer/story':[[998,542],[792,729]]
- }};
+/* GENERATED from modules/coordinates.json. */
+window.LIGHTBUD_LAYOUT={
+  "version": 3,
+  "coordinateSystem": "author-atlas-1538x1022",
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1538,
+    "height": 1022
+  },
+  "mobileFocus": {
+    "x": 740,
+    "y": 510
+  },
+  "background": {
+    "x": 0,
+    "y": 0,
+    "width": 1538,
+    "height": 1022,
+    "opacity": 1,
+    "assetId": "atlas"
+  },
+  "placements": {
+    "mush": {
+      "x": 540,
+      "y": 245
+    },
+    "king": {
+      "x": 647,
+      "y": 204
+    },
+    "garden": {
+      "x": 703,
+      "y": 405
+    },
+    "tree": {
+      "x": 1330,
+      "y": 150
+    },
+    "sacred-tree": {
+      "x": 1190,
+      "y": 125
+    },
+    "root-ruins": {
+      "x": 1240,
+      "y": 322
+    },
+    "ruin": {
+      "x": 150,
+      "y": 535
+    },
+    "wind": {
+      "x": 315,
+      "y": 402
+    },
+    "sleep": {
+      "x": 531,
+      "y": 417
+    },
+    "woven": {
+      "x": 877,
+      "y": 515
+    },
+    "mist": {
+      "x": 1000,
+      "y": 583
+    },
+    "foundation": {
+      "x": 960,
+      "y": 712
+    },
+    "hollow-bud": {
+      "x": 1010,
+      "y": 415
+    },
+    "mush-equipment": {
+      "x": 1029,
+      "y": 439
+    },
+    "marsh": {
+      "x": 1070,
+      "y": 867
+    },
+    "outer-forest": {
+      "x": 1350,
+      "y": 660
+    },
+    "highland": {
+      "x": 995,
+      "y": 249
+    }
+  },
+  "routes": {},
+  "overlays": [
+    {
+      "id": "garden",
+      "entryId": "GEO-007",
+      "assetId": "garden",
+      "x": 633,
+      "y": 356,
+      "width": 136,
+      "height": 89,
+      "opacity": 1,
+      "zIndex": 1,
+      "visible": true
+    },
+    {
+      "id": "chamber",
+      "entryId": "GEO-011",
+      "assetId": "chamber",
+      "x": 944,
+      "y": 363,
+      "width": 134,
+      "height": 101,
+      "opacity": 1,
+      "zIndex": 2,
+      "visible": true
+    }
+  ]
+};

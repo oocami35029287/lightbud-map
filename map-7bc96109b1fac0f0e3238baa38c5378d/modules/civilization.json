@@ -1,0 +1,90 @@
+[
+  {
+    "id": "TEC-001",
+    "name": "穩定器",
+    "fields": {
+      "類別": "前文明人工調節設備。",
+      "定義": "前文明建立的共振能調節系統，控制流量、壓力與頻率。",
+      "數量及歷史": "艾菲拉僅有四座世界級核心穩定器，源自前文明四個不同的設置區域；災變後各設備周圍逐漸形成具有不同生態、地貌與文化的場所。",
+      "當代對應": "蘑丘生活圈、遺構之森、深境沼原與艾瑟波恩各有一座對應的核心穩定器；設備原始分區不以災後聚落或地形邊界判定。",
+      "運作分工": "穩定器調節魔素狀態，菌網負責跨地輸送與分流；穩定器本身不構成一套與菌網並行的人工跨地輸送網。",
+      "防護": "每座穩定器設有守脈機。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "數量及歷史",
+        "當代對應",
+        "運作分工",
+        "防護"
+      ]
+    }
+  },
+  {
+    "id": "TEC-002",
+    "name": "守脈機",
+    "fields": {
+      "類別": "前文明穩定器防護設備。",
+      "正式古代名稱": "穩定器防護單元。",
+      "定義": "以保護穩定器及隔離風險為目標的機械防護系統。",
+      "防護形式": "可執行區域封鎖、主動防護與緊急安全保護程序，阻止危險操作；修復穩定器不以摧毀守脈機為必要手段。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "正式古代名稱",
+        "定義",
+        "防護形式"
+      ]
+    }
+  },
+  {
+    "id": "TEC-004",
+    "name": "菌木手杖",
+    "fields": {
+      "類別": "靈律共鳴輔助器具。",
+      "定義": "蘑丘靈律師使用的菌木製器具，可協助共鳴與律動引導。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "TEC-007",
+    "name": "古代飛行載具",
+    "fields": {
+      "類別": "前文明交通技術。",
+      "定義": "前文明遺留的飛行載具，為格蕾茲持續研究、希望修復的對象。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  }
+]
