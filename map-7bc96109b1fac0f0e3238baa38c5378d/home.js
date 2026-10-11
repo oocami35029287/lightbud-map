@@ -1,0 +1,2 @@
+
+(()=>{'use strict';const hero=document.querySelector('.hero');if(!hero||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let scheduled=false;const update=()=>{const y=Math.min(window.scrollY||0,Math.max(1,hero.offsetHeight));hero.style.setProperty('--hero-shift',(y*.14).toFixed(1)+'px');scheduled=false};window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update)}},{passive:true});update()})();
