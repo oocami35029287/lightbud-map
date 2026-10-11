@@ -1,44 +1,19 @@
-/* 可手動編輯。座標使用原圖 1536 × 1024 像素；本檔不改世界規則。 */
-window.LIGHTBUD_LAYOUT = {
-  version: 1,
-  bounds: {x: 0, y: 0, width: 1536, height: 1024},
-  mobileFocus: {x:640, y:512},
-  background: {src: 'assets/ephyra-base.png', x: 0, y: 0, width: 1536, height: 1024, opacity: 1},
-  placements: {
-    'white-rift':{x:358,y:411,labelDx:-18,labelDy:22},
-    mush: {x:425,y:258}, king:{x:550,y:239,labelDx:24,labelDy:-8},
-    garden:{x:545,y:354,labelDx:28,labelDy:20}, 'garden-inner':{x:565,y:370},
-    home:{x:351,y:283,labelDx:-18,labelDy:-14},
-    'hollow-bud':{x:545,y:689,labelDx:17,labelDy:7},
-    'ruin-floor-4':{x:689,y:451,labelDx:17,labelDy:-12},
-    'ruin-floor-3':{x:755,y:561,labelDx:17,labelDy:-12},
-    'ruin-floor-2':{x:684,y:671,labelDx:17,labelDy:18},
-    'ruin-floor-1':{x:646,y:788,labelDx:17,labelDy:18},
-    bridges:{x:430,y:315,labelDx:-17,labelDy:22},
-    fields:{x:729,y:306,labelDx:18,labelDy:-12},
-    'mush-stabilizer':{x:804,y:352,labelDx:18,labelDy:18},
-    control:{x:825,y:364}, trade:{x:889,y:444,labelDx:18,labelDy:20},
-    tree:{x:1155,y:158}, 'tree-stabilizer':{x:1182,y:214,labelDx:18,labelDy:22},
-    magic:{x:1051,y:212,labelDx:-18,labelDy:-15},
-    ruin:{x:575,y:543}, 'ruin-stabilizer':{x:647,y:645,labelDx:18,labelDy:20},
-    relic:{x:448,y:710,labelDx:18,labelDy:22},
-    marsh:{x:1190,y:870}, 'marsh-stabilizer':{x:1055,y:778,labelDx:17,labelDy:-12},
-    herd:{x:1290,y:774,labelDx:18,labelDy:20}
-  },
-  /* 中間轉折點可手改；連線端點會跟著節點移動。菌路不是人物道路。 */
-  routes: {
-    'garden/mush-stabilizer/life': [[620,385],[738,384]],
-    'garden/tree-stabilizer/life': [[572,430],[694,528],[904,552],[1038,453],[1131,319],[1168,245]],
-    'garden/hollow-bud/life': [[528,442],[487,553],[510,642]],
-    'garden/ruin-stabilizer/life': [[565,458],[600,542]],
-    'garden/marsh-stabilizer/life': [[765,469],[917,603],[979,700]],
-    'mush/home/road': [[389,265]],
-    'mush/garden/road': [[478,288],[510,324]],
-    'garden/ruin-floor-4/road': [[621,399],[659,420]],
-    'ruin-floor-4/white-rift/road': [[595,430],[490,425],[409,433]],
-    'ruin-floor-4/ruin-floor-3/road': [[724,484],[722,527]],
-    'ruin-floor-3/ruin-floor-2/road': [[766,608],[725,632]],
-    'ruin-floor-2/hollow-bud/road': [[624,656],[583,670]],
-    'mush/trade/road': [[657,320],[843,406]]
-  }
-};
+/* 可手改的 1536 × 1024 美術配置；非正式地理座標。 */
+window.LIGHTBUD_LAYOUT={version:2,bounds:{x:0,y:0,width:1536,height:1024},mobileFocus:{x:650,y:510},background:{src:'assets/ephyra-bible-v2.png',x:0,y:0,width:1536,height:1024,opacity:1},placements:{
+ 'white-rift':{x:303,y:381,labelDx:-18,labelDy:20},
+ mush:{x:342,y:273},king:{x:529,y:227,labelDx:22,labelDy:-12},garden:{x:457,y:318,labelDx:-15,labelDy:23},
+ tree:{x:1135,y:200},'sacred-tree':{x:1175,y:132,labelDx:18,labelDy:0},'root-ruins':{x:1185,y:320,labelDx:20,labelDy:16},'tree-stabilizer':{x:1225,y:360,labelDx:20,labelDy:15},
+ ruin:{x:215,y:546},wind:{x:783,y:322},sleep:{x:535,y:392},woven:{x:729,y:532},mist:{x:623,y:642},foundation:{x:648,y:772},
+ 'hollow-bud':{x:387,y:375,labelDx:-18,labelDy:15},'mush-equipment':{x:588,y:429,labelDx:20,labelDy:18},'mush-stabilizer':{x:624,y:451,labelDx:20,labelDy:18},
+ marsh:{x:1142,y:895},'marsh-stabilizer':{x:1127,y:778,labelDx:20,labelDy:20},'ruin-stabilizer':{x:516,y:798,labelDx:-18,labelDy:23},'outer-forest':{x:1362,y:660,labelDx:-18,labelDy:-20}
+ },routes:{
+ 'king/garden/structure':[[514,290]],'garden/hollow-bud/life':[[436,344],[398,354]],
+ 'garden/mush-stabilizer/life':[[478,365],[540,397],[600,412]],
+ 'garden/tree-stabilizer/life':[[478,365],[740,446],[1010,453],[1155,405]],
+ 'garden/ruin-stabilizer/life':[[478,365],[500,517],[464,675]],
+ 'garden/marsh-stabilizer/life':[[478,365],[740,446],[959,606],[1057,725]],
+ 'garden/sacred-tree/life':[[478,365],[740,446],[1010,453],[1125,334],[1166,230]],
+ 'mush/garden/road':[[368,289],[406,305]],'mush/hollow-bud/road':[[305,313],[298,345],[333,365]],
+ 'mush/mush-equipment/road':[[372,303],[500,333],[556,367],[566,406]],'tree/root-ruins/road':[[1206,232],[1227,268]],
+ 'mush-stabilizer/marsh-stabilizer/story':[[863,637]],'marsh-stabilizer/tree-stabilizer/story':[[1300,561]],'tree-stabilizer/ruin-stabilizer/story':[[998,542],[792,729]]
+ }};

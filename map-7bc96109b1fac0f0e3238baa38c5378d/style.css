@@ -23,3 +23,6 @@ input[type=checkbox]{accent-color:#697586}
 #card .world-link{display:block;margin-top:18px;padding:10px 12px;border:1px solid #d8dde4;text-align:center;text-decoration:none;border-radius:4px;background:#f7f9fb}
 #white-map{flex:1;min-width:0;min-height:0;background:#fff}.white-world main{background:#fff}
 @media(max-width:800px){header{padding:12px 14px}h1 span{display:none}.header-actions{gap:7px}.world-tabs a{padding:7px 8px;font-size:11px}.eyebrow{font-size:8px;letter-spacing:1.5px}h1{font-size:19px;letter-spacing:2px}}
+
+/* Bible atlas v2 */
+.position-pending .place-symbol{stroke-dasharray:3 2;fill:#fff3dc}.position-pending .place-label{font-style:italic}.legend .dashed{border-top-style:solid}#story-list{display:grid;gap:5px;margin:12px 0}#story-list button{text-align:left;font-size:12px;line-height:1.5;padding:8px 10px}#story-separate{font-size:12px;line-height:1.8}.edge[data-type="life"]{stroke-linecap:round}
