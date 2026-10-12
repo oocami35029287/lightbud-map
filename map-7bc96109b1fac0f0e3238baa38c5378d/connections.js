@@ -1,0 +1,77 @@
+/* GENERATED from modules/connections.json. */
+window.LIGHTBUD_CONNECTIONS=[
+  {
+    "id": "rel-king-garden",
+    "from": "king",
+    "to": "garden",
+    "type": "structure",
+    "relation": "同一生命系統",
+    "refs": [
+      "ECO-007"
+    ],
+    "status": "connected",
+    "note": "地表巨菌與地下根部交流場所；冠繭是集合意識的凝聚處。"
+  },
+  {
+    "id": "rel-garden-chamber",
+    "from": "garden",
+    "to": "hollow-bud",
+    "type": "life",
+    "relation": "訊號交換",
+    "refs": [
+      "GEO-011",
+      "ECO-005"
+    ],
+    "status": "unassessed",
+    "note": "功能關係示意；不表示可行走或已測定的直達管線。"
+  },
+  {
+    "id": "rel-garden-tree",
+    "from": "garden",
+    "to": "sacred-tree",
+    "type": "life",
+    "relation": "菌網與聖樹魔素交換",
+    "refs": [
+      "ECO-006",
+      "ECO-008"
+    ],
+    "status": "unassessed",
+    "note": "功能關係示意。"
+  },
+  {
+    "id": "rel-highland-mush",
+    "from": "mush",
+    "to": "highland",
+    "type": "road",
+    "relation": "高地走廊交通",
+    "refs": [
+      "GEO-016"
+    ],
+    "status": "unassessed",
+    "note": "實體道路關係；不描繪未核定的精確路徑。"
+  },
+  {
+    "id": "rel-highland-wind",
+    "from": "wind",
+    "to": "highland",
+    "type": "road",
+    "relation": "高樓聯絡橋接入",
+    "refs": [
+      "GEO-016"
+    ],
+    "status": "unassessed",
+    "note": "道路走向示意。"
+  },
+  {
+    "id": "rel-highland-tree",
+    "from": "highland",
+    "to": "tree",
+    "type": "road",
+    "relation": "通往聖樹高地",
+    "refs": [
+      "GEO-016"
+    ],
+    "status": "unassessed",
+    "note": "道路走向示意。"
+  }
+];

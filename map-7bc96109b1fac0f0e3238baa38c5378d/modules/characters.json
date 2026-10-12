@@ -1,0 +1,144 @@
+[
+  {
+    "id": "CHR-001",
+    "name": "璃璃",
+    "fields": {
+      "類別": "主角。",
+      "原居世界": "WRD-002。",
+      "主導律": "MAG-003。",
+      "特性": "空相律極強，未受訓練時容易不自主地擬合附近生命律動，連同其不安情緒與生理反饋一併承受；這種共鳴不等於讀取完整思想。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "原居世界",
+        "主導律",
+        "特性"
+      ]
+    }
+  },
+  {
+    "id": "CHR-002",
+    "name": "格蕾茲",
+    "fields": {
+      "類別": "主要同伴。",
+      "所屬群體": "RAC-002。",
+      "居住區域": "GEO-003。",
+      "主導律": "MAG-005。",
+      "特徵": "具有小型龍翼，無法只靠翅膀自主飛行。",
+      "夢想": "修復古代飛行載具，真正飛上天空。",
+      "專長": "喜愛研究、拆解、辨認及修復古代機械與零件。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "所屬群體",
+        "居住區域",
+        "主導律",
+        "特徵",
+        "夢想",
+        "專長"
+      ]
+    }
+  },
+  {
+    "id": "CHR-003",
+    "name": "弗蕾",
+    "fields": {
+      "類別": "主要同伴。",
+      "地區": "GEO-008。",
+      "族群": "RAC-004。",
+      "主導律": "MAG-006。",
+      "日常": "照顧毛鼠，重視持續的照護與守護。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "地區",
+        "族群",
+        "主導律",
+        "日常"
+      ]
+    }
+  },
+  {
+    "id": "CHR-004",
+    "name": "瑟薇",
+    "fields": {
+      "類別": "主要同伴。",
+      "地區": "GEO-009。",
+      "所屬組織": "ORG-001、ORG-002。",
+      "主導律": "MAG-004。",
+      "身分": "聖蔭教會培育的魔法公會新星，重視知識、研究與守護居民的責任。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "地區",
+        "所屬組織",
+        "主導律",
+        "身分"
+      ]
+    }
+  },
+  {
+    "id": "CHR-005",
+    "name": "小麻",
+    "fields": {
+      "類別": "蘑丘居民。",
+      "族群": "RAC-001。",
+      "職務": "見習採集員。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "族群",
+        "職務"
+      ]
+    }
+  },
+  {
+    "id": "CHR-008",
+    "name": "小穗",
+    "fields": {
+      "類別": "蘑丘居民。",
+      "職務": "孢技師。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "職務"
+      ]
+    }
+  }
+]

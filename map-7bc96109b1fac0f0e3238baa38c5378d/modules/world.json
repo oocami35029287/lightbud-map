@@ -1,0 +1,269 @@
+[
+  {
+    "id": "WRD-001",
+    "name": "艾菲拉",
+    "fields": {
+      "類別": "世界。",
+      "定義": "古語意為「遺留之境」。古代共振能失控災變後仍有生物與社群存續的世界。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "WRD-002",
+    "name": "白域",
+    "fields": {
+      "類別": "世界。",
+      "定義": "璃璃原本生活的世界，有她的家人與日常生活。",
+      "魔素環境": "缺乏艾菲拉所具有的魔素條件，會影響跨界倉鼠族的體型與高階認知。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "魔素環境"
+      ]
+    }
+  },
+  {
+    "id": "HIS-001",
+    "name": "前文明",
+    "fields": {
+      "類別": "文明時期。",
+      "定義": "艾菲拉大規模災變之前，擁有城市、交通、工業與能源技術的文明。",
+      "技術": "利用機械結構與量子相關研究控制「共振能」，建立穩定器及其防護設備；此時的技術運作不依賴當代孢靈。",
+      "都市演變": "古代都市曾在不同時代逐層向上擴建，形成後來遺構之森的四層疊構。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "技術",
+        "都市演變"
+      ]
+    }
+  },
+  {
+    "id": "HIS-002",
+    "name": "共振能失控災變",
+    "fields": {
+      "類別": "歷史事件。",
+      "定義": "前文明時期發生的大規模共振能失控，破壞城市及生存環境，造成文明衰敗與人口大量損失。",
+      "後果": "部分倖存者離散遷移，遺留都市逐漸受到植物與菌類覆蓋。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "後果"
+      ]
+    }
+  },
+  {
+    "id": "HIS-003",
+    "name": "災後維護體系衰退",
+    "fields": {
+      "類別": "歷史變化。",
+      "定義": "災後倖存者曾繼續維護前文明設備；因人口死亡、流離與社會分化，原有維護體系逐步衰退。",
+      "設備延續": "前文明穩定器在災變期間轉為緊急維持用途，並延續到當代。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "設備延續"
+      ]
+    }
+  },
+  {
+    "id": "HIS-004",
+    "name": "菌網接入古代設備",
+    "fields": {
+      "類別": "歷史生態變化。",
+      "定義": "災後數十年間，能適應與利用魔素的菌類迅速演化，其孢絲逐步接入仍在運作的古代設備。",
+      "結果": "生命構成的菌網承接魔素輸送、訊號傳遞與跨地分流，與人工穩定器形成互相依存的系統。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "結果"
+      ]
+    }
+  },
+  {
+    "id": "HIS-005",
+    "name": "災後地域人群分化",
+    "fields": {
+      "類別": "歷史生物變化。",
+      "定義": "災後倖存人群受到各地魔素與生態生命律動的長期共鳴影響，分化出具有不同身體特徵的族群。",
+      "傳承": "地域分化形成的外形特徵可以遺傳。不同族群具有共同的人類祖源與跨族生育相容性；後代外貌通常以一方的主要形態為主，兼有少量混合特徵。現代穩定環境中的個體不會因為短暫跨地旅行立即改變族群形態。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "傳承"
+      ]
+    }
+  },
+  {
+    "id": "MAG-001",
+    "name": "共振能／魔素",
+    "fields": {
+      "類別": "能量。",
+      "定義": "「共振能」是前文明對特殊能量的稱呼；「魔素」是災後居民對同一能量在環境與生命中活動的稱呼。",
+      "功能": "參與生命、生態與古代設備運作，亦可透過菌網輸送和分流；在菌類生命間可作為訊號與共鳴的媒介。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "功能"
+      ]
+    }
+  },
+  {
+    "id": "MAG-002",
+    "name": "靈律",
+    "fields": {
+      "類別": "生命固有律動。",
+      "定義": "生命具有的共鳴特性，由空相律、構相律、塑相律、迴相律四種基礎律構成。",
+      "普遍性": "所有生命都同時具有四種基礎律，但強度分布不同。",
+      "與魔素的關係": "靈律在缺少魔素時仍存在；魔素可以傳遞、增強共鳴。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "普遍性",
+        "與魔素的關係"
+      ]
+    }
+  },
+  {
+    "id": "MAG-003",
+    "name": "空相律",
+    "fields": {
+      "類別": "基礎律。",
+      "定義": "以映照與擬合為核心，不以固定主旋律為特徵，能高度擬合外界節奏、映照斷裂波形。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "MAG-004",
+    "name": "構相律",
+    "fields": {
+      "類別": "基礎律。",
+      "定義": "以結構與秩序為核心，辨識並組織不同律動之間的結構關係。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "MAG-005",
+    "name": "塑相律",
+    "fields": {
+      "類別": "基礎律。",
+      "定義": "以變形與重組為核心，拆解、調整及重新組合已有形式與律動結構。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "MAG-006",
+    "name": "迴相律",
+    "fields": {
+      "類別": "基礎律。",
+      "定義": "以追溯與延續為核心，辨認既有節奏的連續性、變化及原有狀態，維護其延續。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "mush",
+    "ref": "GEO-001",
+    "level": 0,
+    "parent": null
+  },
+  {
+    "id": "tree",
+    "ref": "GEO-009",
+    "level": 0,
+    "parent": null
+  },
+  {
+    "id": "ruin",
+    "ref": "GEO-002",
+    "level": 0,
+    "parent": null
+  },
+  {
+    "id": "marsh",
+    "ref": "GEO-008",
+    "level": 0,
+    "parent": null
+  },
+  {
+    "id": "king",
+    "ref": "ECO-007",
+    "level": 1,
+    "parent": "mush",
+    "label": "菌王地表株"
+  },
+  {
+    "id": "garden",
+    "ref": "GEO-007",
+    "level": 1,
+    "parent": "mush"
+  },
+  {
+    "id": "wind",
+    "ref": "GEO-003",
+    "level": 1,
+    "parent": "ruin"
+  },
+  {
+    "id": "sleep",
+    "ref": "GEO-005",
+    "level": 1,
+    "parent": "ruin"
+  },
+  {
+    "id": "woven",
+    "ref": "GEO-004",
+    "level": 1,
+    "parent": "ruin"
+  },
+  {
+    "id": "mist",
+    "ref": "GEO-015",
+    "level": 1,
+    "parent": "ruin"
+  },
+  {
+    "id": "foundation",
+    "ref": "GEO-006",
+    "level": 1,
+    "parent": "ruin"
+  },
+  {
+    "id": "hollow-bud",
+    "ref": "GEO-011",
+    "level": 1,
+    "parent": "sleep"
+  },
+  {
+    "id": "mush-equipment",
+    "ref": "GEO-012",
+    "level": 2,
+    "parent": "hollow-bud"
+  },
+  {
+    "id": "sacred-tree",
+    "ref": "ECO-008",
+    "level": 1,
+    "parent": "tree"
+  },
+  {
+    "id": "root-ruins",
+    "ref": "GEO-010",
+    "level": 1,
+    "parent": "tree"
+  },
+  {
+    "id": "outer-forest",
+    "ref": "GEO-014",
+    "level": 1,
+    "parent": "marsh"
+  },
+  {
+    "id": "highland",
+    "ref": "GEO-016",
+    "level": 1,
+    "parent": null
+  }
+]

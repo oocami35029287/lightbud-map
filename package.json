@@ -1,0 +1,1 @@
+{"name":"lightbud-world-site","private":true,"scripts":{"check":"node tools/validate.cjs && node tools/test-pipeline.cjs","build":"node tools/build-site.cjs","test:browser":"node tools/browser-test.cjs"}}

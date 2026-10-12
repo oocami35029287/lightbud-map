@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ECO-001",
+    "name": "孢靈",
+    "fields": {
+      "類別": "菌類生命階段。",
+      "定義": "菌類生命的幼體，可在自然環境生長，也可經居民培養；成長後可成為不同類型的菌精。",
+      "感受": "小型獨立生命可感知環境並產生基礎情緒。",
+      "環境活動": "部分孢靈以漂浮、發光的形態存在，並可攜帶魔素。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "感受",
+        "環境活動"
+      ]
+    }
+  },
+  {
+    "id": "ECO-002",
+    "name": "菌精",
+    "fields": {
+      "類別": "菌類成熟生命。",
+      "定義": "由孢靈成長而來的菌類生命，具有多種不同功能與形態，可經居民培養，也可自然生長。",
+      "集群": "菌精之間可以成簇、形成連結，產生更大的菌類生命結構。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "集群"
+      ]
+    }
+  },
+  {
+    "id": "ECO-003",
+    "name": "孢絲",
+    "fields": {
+      "類別": "菌類生命結構。",
+      "定義": "菌精群體形成或連結出的延伸結構；可穿行古代建築、地下縫隙與根系。",
+      "功能": "部分孢絲結構參與魔素與生命訊號的傳遞和跨區分流。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "功能"
+      ]
+    }
+  },
+  {
+    "id": "ECO-004",
+    "name": "菌簇",
+    "fields": {
+      "類別": "菌類集合生命。",
+      "定義": "由相互聯繫的菌類生命形成的集群。不同菌簇可以具有各自的群體意識。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義"
+      ]
+    }
+  },
+  {
+    "id": "ECO-005",
+    "name": "魔素網路",
+    "fields": {
+      "類別": "生命與能量傳輸系統。",
+      "定義": "由具傳輸能力的特殊菌類與孢絲連結構成的功能性網路，負責魔素、生命狀態及共鳴訊號的流通與分流。",
+      "結構": "連結菌王的協調核心、不同區域的感知交流場所與四座古代穩定器。",
+      "特性": "魔素網路連線不等於人物可行走的道路。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "結構",
+        "特性"
+      ]
+    }
+  },
+  {
+    "id": "ECO-006",
+    "name": "菌網",
+    "fields": {
+      "類別": "世界生命網路。",
+      "定義": "連結艾菲拉各地菌類生命及其魔素交換的整體網路，可類比遍布世界的神經系統。",
+      "分工": "由菌王協調生命與感知訊號；孢絲負責輸送與分流；人工穩定器控制流量、壓力與頻率。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "分工"
+      ]
+    }
+  },
+  {
+    "id": "ECO-007",
+    "name": "菌王",
+    "fields": {
+      "類別": "菌類集合意識。",
+      "定義": "由大型菌類集群構成的強大集合意識體，是菌網生命訊號的主要協調中心。",
+      "本體位置": "地表巨大菌王株位於蘑丘，根部意識核心位於沉韻之庭；地表與根部屬同一菌王。",
+      "能力界線": "能感知、連結及協調菌網，但不能取代居民遠距修復古代機械本體。",
+      "形象與空間": "地表巨大菌株、地下根部的沉韻之庭與懸掛冠繭須分開理解；菌王集合意識寄居／凝聚於冠繭。冠繭不等同整株地表巨菌。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "本體位置",
+        "能力界線"
+      ],
+      "supplement": {
+        "url": "https://docs.google.com/document/d/1YJ61U2Nn5KLwvWrqYnzy-mriwn6Uyo6zHeOKCoe0tsg/edit",
+        "decision": "LB-071",
+        "status": "A",
+        "publication": "Session04 user-approved public scope; Bible sync pending"
+      }
+    }
+  },
+  {
+    "id": "ECO-008",
+    "name": "聖樹",
+    "fields": {
+      "類別": "巨大生命體與魔素調和系統。",
+      "定義": "位於艾瑟波恩的巨大聖樹，與全域菌網及北方穩定器連結。",
+      "功能": "吸收失衡魔素並將其轉化為較穩定的魔素，是艾菲拉魔素維護的重要生命系統，也是艾瑟波恩長期魔素環境相對安定的重要原因。",
+      "地理": "聖樹生長及地勢變化形成艾瑟波恩的高地，其根部覆蓋前文明遺跡。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "功能",
+        "地理"
+      ]
+    }
+  },
+  {
+    "id": "ECO-009",
+    "name": "毛鼠",
+    "fields": {
+      "類別": "沼原牧畜。",
+      "定義": "由深境沼原居民照顧的動物，性情溫馴、親人且黏人。",
+      "人物關聯": "CHR-003。",
+      "地區": "GEO-008。"
+    },
+    "status": "A",
+    "visibility": "public",
+    "source": {
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
+      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
+      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "fields": [
+        "類別",
+        "定義",
+        "人物關聯",
+        "地區"
+      ]
+    }
+  }
+]

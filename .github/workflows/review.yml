@@ -1,0 +1,28 @@
+name: World site review
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run check
+      - run: npm run build
+      - run: npm install --no-save --ignore-scripts playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/lightbud-http.log 2>&1 &
+      - run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lightbud-world-site-review
+          include-hidden-files: true
+          path: |
+            dist
+            .test-output/browser-results.json
+# No scheduled Drive reads, deployment, merge, or writes to main.
