@@ -17,5 +17,6 @@
 本工程不儲存世界法典原文、不自動讀取 Drive 草稿，也不自動發布新設定。資料更新先核對同版 main Bible MD／結構 JSON 與作者新 A、審核白名單，再建置及提出 PR。
 
 - [本輪介紹更新與角色核對](reports/INTRO-20261110.md)
+- [角色圖片補正與現行素材核對](reports/CHARACTER-ART-20261110.md)
 - 介紹資料：`modules/catalog.json`；地圖快照：`canon.js`，互相獨立。
 - `content/atlas-baseline.json` 鎖定本輪排除的地圖依賴；任何意外改動會使驗證失敗。

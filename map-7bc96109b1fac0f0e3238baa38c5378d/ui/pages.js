@@ -1,18 +1,19 @@
 import {navigation,h,readJSON,entryURL,picture} from './intro.js';
 const page=document.body.dataset.page,main=document.querySelector('#main-content');
 try{
-const [catalog,relations,assets]=await Promise.all(['catalog','relations','assets'].map(readJSON));
+const [catalog,relations,assets,characterAssets]=await Promise.all(['catalog','relations','assets','character-art'].map(readJSON));
 const summary=c=>c.fields['簡介']||c.fields['定義']||c.fields['特性']||c.fields['身分']||c.fields['職責']||c.fields['地理']||c.fields['地貌']||c.fields['日常']||c.fields['職務']||c.fields['形態']||c.fields['生活']||Object.entries(c.fields).find(([k])=>k!=='類別')?.[1]||'';
 const display=v=>{const p=h('p');for(const part of v.split(/([A-Z]+-\d{3})/)){if(catalog[part])p.append(h('a',{href:entryURL(catalog[part])},catalog[part].name));else p.append(document.createTextNode(part));}return p;};
 const artNames={garden:'菌王深庭（原圖標題：沉韻之庭）· 作者概念圖',chamber:'群息之庭 · 既有空間概念圖，非現行樓層剖面',king:'菌王地表株 · 作者概念圖'};
-const lawInfo={'CHR-001':['MAG-003','傾聽生命','green'],'CHR-002':['MAG-005','讓飛行夢成形','gold'],'CHR-003':['MAG-006','照料每一天','blue'],'CHR-004':['MAG-004','追尋結構與答案','purple'],'CHR-005':[null,'蘑丘的採集日常','green'],'CHR-008':[null,'器具與生命的合作','gold']};
 let portraitSequence=0;
 function characterArt(c){
- const [law,label,color]=lawInfo[c.id];
- if(['CHR-001','CHR-005'].includes(c.id)){
-  const f=h('figure',{class:'character-art portrait-'+c.id}),svg=document.createElementNS('http://www.w3.org/2000/svg','svg'),im=document.createElementNS('http://www.w3.org/2000/svg','image');svg.setAttribute('viewBox',c.id==='CHR-001'?'490 40 300 710':'85 140 195 245');const defs=document.createElementNS('http://www.w3.org/2000/svg','defs'),clip=document.createElementNS('http://www.w3.org/2000/svg','clipPath'),rect=document.createElementNS('http://www.w3.org/2000/svg','rect'),clipId='portrait-'+(++portraitSequence);clip.id=clipId;for(const [k,v]of Object.entries(c.id==='CHR-001'?{x:490,y:40,width:300,height:710}:{x:85,y:140,width:195,height:245}))rect.setAttribute(k,v);clip.append(rect);defs.append(clip);svg.append(defs);im.setAttribute('clip-path','url(#'+clipId+')');svg.setAttribute('role','img');svg.setAttribute('aria-label',c.name+' · 既有雙人設計板對應局部');svg.setAttribute('class','portrait-window');im.setAttribute('href',assets.lili.src);im.setAttribute('width','1887');im.setAttribute('height','838');svg.append(im);f.append(svg,h('figcaption',{},c.id==='CHR-001'?'璃璃 · 既有作者核准設計板':'小麻 · 既有設計參考，服裝以後續定稿為準'));return f;
- }
- const motif=h('div',{class:'character-motif '+color});motif.append(h('span',{class:'law-symbol','aria-hidden':'true'},c.id==='CHR-002'?'✧':c.id==='CHR-003'?'◎':c.id==='CHR-004'?'◇':'❋'),h('span',{class:'motif-label'},law?catalog[law].name:'蘑丘生活'),h('span',{class:'motif-theme'},label));return motif;
+ const asset=characterAssets[c.id];if(!asset)throw Error('Missing reviewed character art: '+c.id);
+ const f=h('figure',{class:'character-art portrait-'+c.id}),svg=document.createElementNS('http://www.w3.org/2000/svg','svg'),im=document.createElementNS('http://www.w3.org/2000/svg','image');
+ const [x,y,width,height]=asset.portrait,defs=document.createElementNS('http://www.w3.org/2000/svg','defs'),clip=document.createElementNS('http://www.w3.org/2000/svg','clipPath'),rect=document.createElementNS('http://www.w3.org/2000/svg','rect'),clipId='portrait-'+(++portraitSequence);
+ svg.setAttribute('viewBox',asset.portrait.join(' '));svg.setAttribute('role','img');svg.setAttribute('aria-label',c.name+' · 角色設計圖');svg.setAttribute('class','portrait-window');
+ clip.id=clipId;for(const [k,v]of Object.entries({x,y,width,height}))rect.setAttribute(k,v);clip.append(rect);defs.append(clip);svg.append(defs);
+ im.setAttribute('clip-path','url(#'+clipId+')');im.setAttribute('href',asset.src);im.setAttribute('width',asset.width);im.setAttribute('height',asset.height);svg.append(im);
+ f.append(svg,h('figcaption',{},c.name+' · 作者角色設計圖'));return f;
 }
 if(page==='index'){
  const scene=document.querySelector('#hero-scene');scene.append(h('img',{src:assets.home.src,alt:'綠意覆蓋的古代都市與軌道遺構',width:1536,height:1024,fetchpriority:'high'}));
@@ -32,7 +33,7 @@ if(page==='index'){
   for(const [title,text]of [['古老城市上的新生活','大裂潮之後，古代都市留下了遺構。菌類與其他生命重新生長，人們在其間建立聚落、工作與往來。'],['魔素，連結生命與環境','魔素參與生命與設備的運作，菌網傳遞能源和訊號。它們各有作用，也需要照護與維持。'],['四律，每個人不同的專長','空相與生命共鳴，構相辨認結構，塑相協助物體變形與重組，迴相照護仍可修復的生命。能力也各有邊界。']]){const article=h('article');article.append(h('h3',{},title),h('p',{},text));guide.append(article);}main.append(guide);
   const feature=h('section',{class:'world-feature'}),copy=h('div');copy.append(h('h2',{},'艾菲拉與白域'),h('p',{},catalog['WRD-001'].fields['世界狀態']),h('p',{},'白域是璃璃原本生活的世界，那裡有她的家人與熟悉的日常。'),h('a',{class:'text-link',href:'white.html'},'走近白域 →'));feature.append(copy,picture(assets.atlas,'艾菲拉 · 作者世界地圖'));main.append(feature);
  }
- if(page==='characters'){const note=h('p',{class:'collection-note'},'璃璃與小麻使用既有作者核准設計板；小麻服裝仍有後續修訂。其他人物以律型與生活意象呈現。');main.append(note);}
+ if(page==='characters'){const note=h('p',{class:'collection-note'},'六位角色均使用現行定案資料夾的獨立設計圖。點開人物，可閱讀簡介並查看完整三視圖。');main.append(note);}
  if(page==='organizations'){
   const diagram=h('section',{class:'authority-diagram'});diagram.append(h('p',{class:'kicker'},'艾瑟波恩 / 權責導覽'),h('h2',{},'守護、治理與研究'));
   const branches=h('div',{class:'branches'});for(const [id,text]of [['ORG-001','聖樹信仰、醫療照護、文獻與聖地准入。'],['ORG-005','城邦公共政務；魔法署、市政署與巡護署各司其職。'],['ORG-003','隸屬城邦政府，負責根枝、生態、通行與居民安全。'],['ORG-008','獨立自治的教育研究機構，遵守公共安全規範。']]){const a=h('a',{href:entryURL(catalog[id])},catalog[id].name);a.append(h('small',{},text));branches.append(a);}diagram.append(branches,h('p',{},'聖地准入、學術研究資格與危險工程操作許可，須分別依各自權責取得。'));main.append(diagram);
@@ -55,6 +56,7 @@ if(page==='index'){
   if(c.id.startsWith('CHR-')){content.append(characterArt(c),h('p',{class:'character-intro'},summary(c)));}
   for(const[k,v]of Object.entries(c.fields)){if(['類別','簡介'].includes(k))continue;const detail=h('details');detail.open=['定義','特性','性格','身分','範圍','地理','職責','地貌','夢想','所屬組織','主導律','位置','位置與界線','名稱'].includes(k);detail.append(h('summary',{},k),display(v));content.append(detail);}
   const related=h('div',{class:'related-links'});related.append(h('h3',{},'繼續認識'));for(const id of relations[c.id]||[])if(catalog[id])related.append(h('a',{href:entryURL(catalog[id])},catalog[id].name+' ↗'));content.append(related);
+  if(characterAssets[c.id]){const art=characterAssets[c.id],section=h('section',{class:'character-sheet'});section.append(h('h3',{},'完整角色設計圖'),picture(art,c.name+' · 角色三視與設計參考'),h('a',{class:'text-link',href:art.src,target:'_blank',rel:'noopener'},'開啟完整設計圖 ↗'));content.append(section);}
   const asset=Object.values(assets).find(a=>(a.entryId===c.id||a.entryIds?.includes(c.id))&&a.src&&!['reference-only','character-sheet'].includes(a.usage)&&a.id!=='home');if(asset)content.append(picture(asset,artNames[asset.id]||c.name+' · 作者概念圖'));
   content.append(h('p',{class:'source-note'},'本條目依作者核准設定整理，僅呈現公開介紹範圍。'),h('a',{class:'source-link',href:'sources.html'},'內容來源與圖片說明 →'));
   const url=new URL(location.href);url.searchParams.set('entry',c.id);history.replaceState(null,'',url);dialog.showModal();

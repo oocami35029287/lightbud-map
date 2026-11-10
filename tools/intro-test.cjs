@@ -24,17 +24,18 @@ for(const [id,name,expected]of [['CHR-001','璃璃','空相律'],['CHR-002','格
  await p.goto(base+'characters.html?entry='+id);await p.waitForSelector('dialog[open]');
  assert.equal(await p.locator('#entry-title').innerText(),name);assert.ok((await p.locator('#entry-detail').innerText()).includes(expected));
  assert.equal(await p.locator('#entry-detail a[href*="lightbud-dream"]').count(),0);
- if(['CHR-001','CHR-005'].includes(id)){
-  const art=p.locator('#entry-detail .portrait-window');assert.ok((await art.getAttribute('aria-label')).startsWith(name));
-  assert.equal(await art.getAttribute('viewBox'),id==='CHR-001'?'490 40 300 710':'85 140 195 245');
- }else assert.equal(await p.locator('#entry-detail .character-art').count(),0);
+ const art=p.locator('#entry-detail .portrait-window');assert.equal(await art.getAttribute('aria-label'),name+' · 角色設計圖');
+ assert.equal(await art.locator('image').getAttribute('href'),'assets/characters/'+id+'.webp');
+ const full=p.locator('#entry-detail .character-sheet img');await full.scrollIntoViewIfNeeded();await full.evaluate(im=>im.decode());
+ assert.ok(await full.evaluate(im=>im.naturalWidth>500&&im.naturalHeight>500));
+ assert.equal(await p.locator('#entry-detail .character-motif').count(),0);
  if(id==='CHR-004'){
   assert.equal(await p.locator('#entry-detail a[href*="ORG-002"]').count(),0);
   await p.locator('#entry-detail .related-links a[href*="ORG-008"]').first().click();await p.waitForSelector('dialog[open]');
   assert.equal(await p.locator('#entry-title').innerText(),'亞斯緹雅魔法學院');
  }
  await p.keyboard.press('Escape');assert.equal(await p.locator('dialog[open]').count(),0);
-}checks.push('All six character cards/deep links: name, identity, law, image assignment, academy relation and Escape');
+}checks.push('All six characters: distinct current portrait, loaded full design sheet, name, identity, law, academy relation and Escape');
 await p.goto(base+'organizations.html');await p.waitForSelector('.authority-diagram');
 assert.equal(await p.locator('.authority-diagram .branches a').count(),4);assert.ok(!(await p.locator('#main-content').innerText()).includes('魔法公會'));checks.push('Current organization responsibilities and retired guild removed');
 for(const [id,name,expected]of [['GEO-005','眠孢域','第一至第四層'],['GEO-011','群息之庭','第一至第三層'],['GEO-007','菌王深庭','第五層'],['HIS-002','大裂潮','大失相災變']]){
