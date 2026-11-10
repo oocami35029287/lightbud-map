@@ -1,0 +1,30 @@
+{
+  "baseCommit": "289062b09cfa8b39b097a3ea50c085cf260dc7d0",
+  "files": {
+    "map.html": "caae48d22fe6a12adec679c4b285216b2f693b510a02f0a7e191e49d367bddd6",
+    "app.js": "9b8f2304d70ef3fb762ae7576e9feeee92db2aa4d385ec532f3b73477201135e",
+    "assets.js": "94a3f731d31adfeb28e4728292536b1628135cbc5f510586cf69d2cb6e36b67d",
+    "map-places.js": "3620089d2474fd636aa101b0e2c391375f341922c3bfde8d2cbe41df40475728",
+    "connections.js": "5dc217ec6c83217ef2098400f307cf88fb6431bcc3d0aaa1b0171dea668f3bdc",
+    "layout.js": "9acbe6f95edc4e87a0e8ffaf0f35720f93db15cd444795b2c8a1ba11b2b532f1",
+    "canon.js": "8a0da739f86d60c0b80871aa7282382e099c6518f54fbe4788b7d49af0a45eaa",
+    "data.js": "3b73e32c1fe6fc26e5138eeae58bd9189c0efe8824d5bbcb11e8140907e1fb27",
+    "style.css": "2980fb8b89f4c3116507b838a86c673987d9f6d5e093c35598f7f36a2d04000d",
+    "theme.css": "551cb2fcc477cd927bc7c9a4dca059a6f34b280218e130f6ef10dcbcf2adaced",
+    "ui/site.js": "aeda500f5eed8c477c247c592915fa441cb0edf067898accd7fcdf8535ec2476",
+    "modules/coordinates.json": "4186619e2f82d028ad0f306278ba8887157eaaaa780c192f0785e98124ae253e",
+    "modules/connections.json": "2a7f76e2a3418742e9e03e16d5090aab397bf591a679cd01a3e3571c2427216e",
+    "modules/map-places.json": "e605ee6bbf451cd2255591dafe582231ff172e1e118f32158910f0a4c4b792bf",
+    "modules/assets.json": "5d999aaa35b833a3a6b6061821ded939f262e1ba823700374e1e047775a59c6b",
+    "assets/ephyra-base.png": "6a9da360f036a9e01b254fc897355664f59efd97255f896040214a27597b3a63",
+    "assets/\u5730\u5716_v1.png": "1225bd7bd16251a95c95cb8933a739b8a362985009b48e64be36cd3fe8b13cb8",
+    "assets/\u83cc\u738b\u682a.png": "d413536d5bd9ec178bf3ed4c9214561bb67c4c46cd72c34ee803f5073f15c229",
+    "assets/ruin_p1_v5.png": "b7e437d8d8d98d9937ace9726bf78c35f085be2c057226ef3610905fc2fdea1b",
+    "assets/\u5927\u5730\u5716.png": "490410ebfcb7d5c460f57f5b13998ca6b5fd8d444f5fdc3f30d0f46a18e66bce",
+    "assets/\u7fa4\u606f\u4e4b\u5ead.png": "80f1cfc2a35e26471c2b4bccb1e7db3b55c2a2c9f7409375d800ecd2afeded9b",
+    "assets/\u6c89\u97fb\u4e4b\u5ead.png": "25b400841952b311fa20cab8fc70c249c80a6194a20e2cad3a5bcec97550175a",
+    "assets/\u8a2d\u8a08\u5b9a\u7a3fv1.png": "4b16fc7292ce498da39371226dd9a874da74068125c4e258b5658a49866ef513",
+    "assets/spore-chamber.png": "29e0d56b3fbc46f7c209a3b1b4bdd9f8cf3481bff1461bae734b69662660a78f",
+    "assets/ephyra-bible-v2.png": "1748b790371da51fe1190a6f106a78166472f31744ae1b504b5ee7d8947d3045"
+  }
+}

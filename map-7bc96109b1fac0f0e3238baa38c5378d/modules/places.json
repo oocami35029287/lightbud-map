@@ -4,20 +4,20 @@
     "name": "蘑丘",
     "fields": {
       "類別": "聚落與地理層級。",
-      "所屬世界": "WRD-001。",
       "定義": "位於四層古代都市上方、由菌類生態覆蓋與人群生活構成的聚落，屬於現代地理上的第五層。",
-      "生活": "有家庭住宅、普通農務、孢田溫室、聚會及交易活動。",
+      "生活": "有家庭住宅、共生菌屋、孢田溫室、聚會及交易活動。菌屋可以由自願協作的孢絲生命生長成型，或用已採收加工的菌材建造，居民提供水分、養分、清理與保護。",
       "交通": "透過橋梁銜接鄰近風棲原的古代高樓上部，接入高地走廊。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "所屬世界",
         "定義",
         "生活",
         "交通"
@@ -29,25 +29,25 @@
     "name": "遺構之森",
     "fields": {
       "類別": "前文明城市遺構區。",
-      "所屬世界": "WRD-001。",
       "定義": "多個時代逐次向上擴建、現已與菌林交織的四層大型古代城市區域。四層表示都市遺構的垂直結構。",
-      "層級": "第四層 GEO-003、GEO-005；第三層 GEO-004；第二層 GEO-015；第一層 GEO-006。",
       "地理關係": "蘑丘覆蓋其第四層部分區域；第一層與自然基準地表約在同一高度。",
-      "魔素環境": "沿古代城市結構向下深入，魔素負荷逐漸升高。"
+      "魔素環境": "沿古代城市結構向下深入，魔素負荷逐漸升高。",
+      "層級": "古代都市有四個物理樓層；蘑丘的現代生活地表在其上方，稱為第五層。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "所屬世界",
         "定義",
-        "層級",
         "地理關係",
-        "魔素環境"
+        "魔素環境",
+        "層級"
       ]
     }
   },
@@ -56,15 +56,17 @@
     "name": "風棲原",
     "fields": {
       "類別": "遺構之森第四層的一個地區。",
-      "地貌": "較開闊的高平台、屋頂與大量前文明高樓群，部分露天區域未受第五層蘑丘聚落覆蓋；包含行墟民家族營地及格蕾茲生活、工作之處。",
-      "交通": "高樓的上部可與第五層蘑丘的橋梁銜接；行墟民在高樓區維護與增建高地走廊的聯絡橋段。"
+      "地貌": "較開闊的高平台、屋頂與前文明高樓群，部分露天區域未受第五層蘑丘覆蓋；可見適應舊樓結構生長的澄樹及行墟民營地。",
+      "交通": "高樓上部可與第五層蘑丘橋梁相接，行墟民在此維護並增建部分高地走廊聯絡橋段，不獨占全線工程。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地貌",
@@ -77,14 +79,16 @@
     "name": "織橋林",
     "fields": {
       "類別": "遺構之森第三層。",
-      "地貌": "多層古橋、立體交通遺構與孢絲形成的可通行路線交織的區域。"
+      "地貌": "殘存前文明高樓、立體街區、不同高度的古代道路、跨樓橋梁與運輸設施互相穿插。經歷漫長崩塌及侵蝕後，部分街區斷裂形成巨型樓間空腔、都市峽谷、斷橋和殘存可辨識的交通網絡；局部有植物、菌絲和其他生命，但不以菌類生態為整個區域的主要景觀。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地貌"
@@ -93,22 +97,24 @@
   },
   {
     "id": "GEO-005",
-    "name": "眠孢庭",
+    "name": "眠孢域",
     "fields": {
       "類別": "遺構之森第四層的一個地區。",
-      "地貌": "位於第五層蘑丘覆蓋之下，菌簇密集、帶有柔和菌光；與同層露天的風棲原分屬不同區域。",
-      "重要場所": "群息之庭位於此區。"
+      "地貌": "第一環①、第二環②及第三環③內側的古代承重柱群、樓板、廊橋、古樓與大空腔與漫長生長的孢絲、菌膜、菌簇和菌光交織，局部形成繭房與感知孢室；不同高度的菌類密度與工程用途不相同，也不代表所有構造均被菌體填滿或通行。",
+      "範圍": "位於蘑丘生活地表下方、中央第三環內側，橫跨遺構之森第一至第四層的立體菌類生態區域。它不是第四層的別稱。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地貌",
-        "重要場所"
+        "範圍"
       ]
     }
   },
@@ -122,9 +128,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地貌"
@@ -133,22 +141,26 @@
   },
   {
     "id": "GEO-007",
-    "name": "沉韻之庭",
+    "name": "菌王深庭",
     "fields": {
       "類別": "菌王根部交流場所。",
-      "地理": "位於蘑丘菌王根部，為菌網主要感知、集合意識與協調核心。",
-      "功能": "靈律師與大靈律長可在此與菌王交流。"
+      "地理": "巨菌根部深處的活體交流空間，由半透明菌膜與交織孢絲包圍，內懸菌絲冠繭。",
+      "功能": "靈律師與大靈律長可在此與菌王交流。",
+      "位置": "位於第五層菌王株根部，與群息之庭及第一核心設備區分開。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理",
-        "功能"
+        "功能",
+        "位置"
       ]
     }
   },
@@ -162,9 +174,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理"
@@ -176,15 +190,17 @@
     "name": "艾瑟波恩",
     "fields": {
       "類別": "聖樹庇護城邦。",
-      "地理": "位於聖樹成長與地勢隆起形成的獨立高地，不延續遺構之森的四層古代城市結構。",
+      "地理": "位於古災變地層差異抬升形成的獨立高地；後世聖樹成長、根系、巨大主幹與氣根街區共同塑造現代依樹城邦，不延續遺構之森的四層古代城市結構。",
       "交通": "經高地走廊與風棲原、蘑丘方向保持實體道路聯繫。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理",
@@ -194,17 +210,19 @@
   },
   {
     "id": "GEO-010",
-    "name": "聖樹根部古代遺跡",
+    "name": "聖蔭至聖所",
     "fields": {
       "類別": "前文明遺跡。",
-      "地理": "位於艾瑟波恩聖樹根系深處，具有北方古代穩定器，與蘑丘側的四層城市遺構不同。"
+      "地理": "聖樹根部包覆的古代遺跡，現為聖蔭教會受控守護與紀念場所；聖地准入與專業安全審查各有權責。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理"
@@ -216,27 +234,26 @@
     "name": "群息之庭",
     "fields": {
       "類別": "菌網區域感知場所。",
-      "地理": "位於第四層眠孢庭的一座大型感知交流孢室。",
-      "功能": "匯集附近菌類生命的狀態與共鳴訊號，透過魔素網路與沉韻之庭交換訊息；屬於菌網區域感知節點。",
-      "空間結構": "第四層眠孢庭的古代建築群被菌類改造，形成整體繭房；中央古代建築內設有獨立蘑丘核心穩定器設備區。共鳴腔室與機械設備區分開，外圍孢絲沿建築與廊道環繞。精確布局與尺度尚未確認。"
+      "地理": "菌類改造中央古代建築、空腔及樓層連接結構，形成高低相連的孢絲繭房式場域。",
+      "功能": "匯集附近菌類生命的狀態與共鳴訊號，透過魔素網路與第五層菌王深庭交換訊息；可供經准入核可的感知交流及共鳴修習。",
+      "範圍": "眠孢域第一環內側，跨第一至第三層的感知與共鳴修習場所。",
+      "空間界線": "群息之庭與第一層最底部的受管制核心機房是獨立空間；一般修習准入不包含機房操作資格。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理",
-        "功能"
-      ],
-      "supplement": {
-        "url": "https://docs.google.com/document/d/1U78bMd1SYi8Xr5lxAZG8Ds5iGoNXw4OeGesG5yjRFfY/edit",
-        "decision": "LB-070",
-        "status": "A",
-        "publication": "Session04 user-approved public scope; Bible sync pending"
-      }
+        "功能",
+        "範圍",
+        "空間界線"
+      ]
     }
   },
   {
@@ -244,25 +261,22 @@
     "name": "蘑丘地下古代設備區",
     "fields": {
       "類別": "前文明設施區。",
-      "地理": "位於蘑丘聚落正下方，與沉韻之庭為不同場所。",
-      "空間關係": "設備區位於群息之庭整體繭房中的中央古代建築內，維持獨立機械設備身分；與沉韻之庭為不同場所。"
+      "地理": "中央古代建築內保持獨立身分的機械設備空間，與感知、交流及修習腔室分開。",
+      "位置與界線": "第一核心主機室位於第一環內側、第一層最底部；整個設備區的其餘跨層範圍尚未核定。機械設備區與群息之庭的感知修習場域分開。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "地理"
-      ],
-      "supplement": {
-        "url": "https://docs.google.com/document/d/1U78bMd1SYi8Xr5lxAZG8Ds5iGoNXw4OeGesG5yjRFfY/edit",
-        "decision": "LB-070",
-        "status": "A",
-        "publication": "Session04 user-approved public scope; Bible sync pending"
-      }
+        "地理",
+        "位置與界線"
+      ]
     }
   },
   {
@@ -276,9 +290,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -291,14 +307,16 @@
     "name": "外緣巨大樹林與高魔素地帶",
     "fields": {
       "類別": "外部地理帶。",
-      "地理": "從深境沼原附近的低地向外延伸，可見相對乾燥、較原始的巨大樹林；再向外存在魔素濃度高到難以生存的地帶。"
+      "地理": "從深境沼原附近的低地向外延伸，可見相對乾燥、較原始的巨大樹林；更外側存在共振能失衡、暗魔素風險較高且難維持穩定生活圈的地帶。不能把高濃度穩定魔素直接當成腐化原因，外圍仍可能有特殊適應生命。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "地理"
@@ -310,17 +328,21 @@
     "name": "霧律墟",
     "fields": {
       "類別": "遺構之森第二層的古代都市結構區。",
-      "地理": "位於第三層織橋林之下、第一層沉基域之上。"
+      "地理": "位於第三層織橋林之下、第一層沉基域之上。",
+      "範圍": "第二層古都市地貌區；同層中央第三環內另有眠孢域，兩者不能直接畫上等號。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "地理"
+        "地理",
+        "範圍"
       ]
     }
   },
@@ -339,9 +361,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "路線",
