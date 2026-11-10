@@ -1,0 +1,122 @@
+{
+  "CHR-001": {
+    "entryId": "CHR-001",
+    "src": "assets/characters/CHR-001.webp",
+    "width": 2172,
+    "height": 724,
+    "portrait": [
+      90,
+      10,
+      300,
+      690
+    ],
+    "source": "https://drive.google.com/file/d/1WFXbQNKwkGW8KXiPXvDp8-0-Pgq2cCsG/view",
+    "sourceFileId": "1WFXbQNKwkGW8KXiPXvDp8-0-Pgq2cCsG",
+    "originalFilename": "璃璃三視圖_提燈圖.png",
+    "originalSha256": "382c6b3ea7d5b9c9e827185c58cd5438f8995fe7e0333e1bfa54e69119dc9717",
+    "sha256": "54955e603c71ed354475057b639265110231e7846c8f9f1cccb4a545bcea3879",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  },
+  "CHR-002": {
+    "entryId": "CHR-002",
+    "src": "assets/characters/CHR-002.webp",
+    "width": 941,
+    "height": 762,
+    "portrait": [
+      15,
+      35,
+      385,
+      725
+    ],
+    "source": "https://drive.google.com/file/d/1dZ7qyGiwQyV_IBoPRYG39bm_vOIfESQz/view",
+    "sourceFileId": "1dZ7qyGiwQyV_IBoPRYG39bm_vOIfESQz",
+    "originalFilename": "2.png",
+    "originalSha256": "0e50dbf885d32d51a6da39c84e019a830de5c79b888509414ab729721ad9a673",
+    "sha256": "72bd4ed1e16f8410f3bb5f016eab50f7eced97ef16b579537b88df971583e91e",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  },
+  "CHR-003": {
+    "entryId": "CHR-003",
+    "src": "assets/characters/CHR-003.webp",
+    "width": 1692,
+    "height": 941,
+    "portrait": [
+      540,
+      15,
+      620,
+      900
+    ],
+    "source": "https://drive.google.com/file/d/1TynpwD5UiXk-qRQqCb66hsnTOsCWwftt/view",
+    "sourceFileId": "1TynpwD5UiXk-qRQqCb66hsnTOsCWwftt",
+    "originalFilename": "弗蕾_三視圖.png",
+    "originalSha256": "7513f0f415c262aa0f229bfdbbcf04c9aa8ed42d3cfbfa73acac99b854437ec3",
+    "sha256": "2267e6681b5e38601bb8cbb211de07c03836b83a29bb72d4ab97c4fa3a181734",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  },
+  "CHR-004": {
+    "entryId": "CHR-004",
+    "src": "assets/characters/CHR-004.webp",
+    "width": 1536,
+    "height": 1024,
+    "portrait": [
+      75,
+      0,
+      450,
+      1000
+    ],
+    "source": "https://drive.google.com/file/d/1XB9PxxYbq_LMkmVgqbq_UTgWUtxOYD-0/view",
+    "sourceFileId": "1XB9PxxYbq_LMkmVgqbq_UTgWUtxOYD-0",
+    "originalFilename": "瑟薇_三視圖.png",
+    "originalSha256": "74082f56e81187cbbac02d24dd491198e89faf8d8975ad601db73d53367d7a1a",
+    "sha256": "2e501c5ead2c8ba7525855ab2a5da39a185d0968d2de4bede53d788b0ec40377",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  },
+  "CHR-005": {
+    "entryId": "CHR-005",
+    "src": "assets/characters/CHR-005.webp",
+    "width": 1312,
+    "height": 1199,
+    "portrait": [
+      40,
+      165,
+      360,
+      555
+    ],
+    "source": "https://drive.google.com/file/d/1rYvO12m0-cmvc6VnBsdhuFXnLBwxKFkg/view",
+    "sourceFileId": "1rYvO12m0-cmvc6VnBsdhuFXnLBwxKFkg",
+    "originalFilename": "小麻_三視圖_採集隊服.png",
+    "originalSha256": "c258ad4ca22c483215f60d94bc515d07dd4ecafcff7dab3d1a8c11d56d639be8",
+    "sha256": "4038796c823c2c307362a90bbf025367a05e6caf9ebc4f9188c39bc41a9b8290",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  },
+  "CHR-008": {
+    "entryId": "CHR-008",
+    "src": "assets/characters/CHR-008.webp",
+    "width": 1536,
+    "height": 1024,
+    "portrait": [
+      80,
+      140,
+      410,
+      630
+    ],
+    "source": "https://drive.google.com/file/d/1UMSV2PA1G8N9QLpQp9A0OW_Lgie6Pp-0/view",
+    "sourceFileId": "1UMSV2PA1G8N9QLpQp9A0OW_Lgie6Pp-0",
+    "originalFilename": "小穗_三視圖.png",
+    "originalSha256": "bc64be0b93161c73d37bf36c5fce72981851a1154a129404014cd283a8c2e3a5",
+    "sha256": "d3866b710363dbdc3c81577215fda8692674b125e9eb2f503f912b5b72d43d38",
+    "usage": "character-sheet",
+    "status": "author-final-folder",
+    "encoding": "webp-quality-92-original-resolution"
+  }
+}
