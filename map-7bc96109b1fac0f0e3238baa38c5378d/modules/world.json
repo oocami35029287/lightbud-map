@@ -4,17 +4,21 @@
     "name": "艾菲拉",
     "fields": {
       "類別": "世界。",
-      "定義": "古語意為「遺留之境」。古代共振能失控災變後仍有生物與社群存續的世界。"
+      "定義": "古語意為「遺留之境」。古代共振能失控災變後仍有生物與社群存續的世界。",
+      "世界狀態": "古代都市與基礎設施部分遺留，菌類及其他生命重新形成生態與聚落。世界本身並未碎裂成漂浮的虛空碎片。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "定義"
+        "定義",
+        "世界狀態"
       ]
     }
   },
@@ -29,9 +33,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -51,9 +57,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -64,22 +72,26 @@
   },
   {
     "id": "HIS-002",
-    "name": "共振能失控災變",
+    "name": "大裂潮",
     "fields": {
       "類別": "歷史事件。",
       "定義": "前文明時期發生的大規模共振能失控，破壞城市及生存環境，造成文明衰敗與人口大量損失。",
-      "後果": "部分倖存者離散遷移，遺留都市逐漸受到植物與菌類覆蓋。"
+      "後果": "倖存者離散遷移，遺留都市逐漸受到植物與菌類覆蓋。",
+      "名稱": "後世通稱「大裂潮」，正式歷史名稱為「大失相災變」。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
-        "後果"
+        "後果",
+        "名稱"
       ]
     }
   },
@@ -94,9 +106,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -115,9 +129,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -136,9 +152,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -151,15 +169,17 @@
     "name": "共振能／魔素",
     "fields": {
       "類別": "能量。",
-      "定義": "「共振能」是前文明對特殊能量的稱呼；「魔素」是災後居民對同一能量在環境與生命中活動的稱呼。",
-      "功能": "參與生命、生態與古代設備運作，亦可透過菌網輸送和分流；在菌類生命間可作為訊號與共鳴的媒介。"
+      "定義": "「共振能」是前文明對同一能源體系的工程總稱；古代分為原生共振能（天然未調質）、定頻共振能（穩定可利用）及失相共振能（失衡）。現代居民稱穩定可用狀態為「魔素」，稱失衡而具侵蝕風險的狀態為「暗魔素」。",
+      "功能": "穩定魔素參與生命、生態與古代設備運作，可經菌網輸送和分流，並作為生命節律及菌類訊號的傳遞、增強媒介。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -172,16 +192,18 @@
     "name": "靈律",
     "fields": {
       "類別": "生命固有律動。",
-      "定義": "生命具有的共鳴特性，由空相律、構相律、塑相律、迴相律四種基礎律構成。",
-      "普遍性": "所有生命都同時具有四種基礎律，但強度分布不同。",
-      "與魔素的關係": "靈律在缺少魔素時仍存在；魔素可以傳遞、增強共鳴。"
+      "定義": "生命自身具有的靈律，包含空相律、構相律、塑相律、迴相律四個基礎面向；一般生命均有固有生命動態與不同程度的共鳴潛能，當代四律代表主要可用操作模式；不能保證每個生命都有四個可獨立施法的本徵通道。",
+      "普遍性": "生命普遍具有靈律與不同程度的共鳴能力；擅長的面向與能做到的事各不相同。",
+      "與魔素的關係": "四律在沒有魔素時仍存在；魔素可傳遞與放大生命共鳴，施法者須依自願媒介釋出的魔素施術。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -195,14 +217,16 @@
     "name": "空相律",
     "fields": {
       "類別": "基礎律。",
-      "定義": "以映照與擬合為核心，不以固定主旋律為特徵，能高度擬合外界節奏、映照斷裂波形。"
+      "定義": "擅長與其他生命的律動建立深入共鳴，依「感知→擬合→交流→自願協作」理解生命狀態、情緒與有限意圖。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"
@@ -214,14 +238,16 @@
     "name": "構相律",
     "fields": {
       "類別": "基礎律。",
-      "定義": "以結構與秩序為核心，辨識並組織不同律動之間的結構關係。"
+      "定義": "識別、組織不同律動與魔素之間的結構關係，可形成可見魔法陣、結界、屏障及短暫承重的魔素構造。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"
@@ -233,14 +259,16 @@
     "name": "塑相律",
     "fields": {
       "類別": "基礎律。",
-      "定義": "以變形與重組為核心，拆解、調整及重新組合已有形式與律動結構。"
+      "定義": "藉魔素作用於既存物體，協助移動、旋轉、拆解、有限形變或重新組裝，與工匠機械技能可相互合作。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"
@@ -252,14 +280,16 @@
     "name": "迴相律",
     "fields": {
       "類別": "基礎律。",
-      "定義": "以追溯與延續為核心，辨認既有節奏的連續性、變化及原有狀態，維護其延續。"
+      "定義": "以生命既有的健康律動或可辨識的穩定基準作為參照，幫助維持、減緩偏離，並促進仍具修復條件的生命組織癒合與生理機能恢復；可呈現環形脈動、節律殘影與收束光線。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"

@@ -4,23 +4,23 @@
     "name": "穩定器",
     "fields": {
       "類別": "前文明人工調節設備。",
-      "定義": "前文明建立的共振能調節系統，控制流量、壓力與頻率。",
-      "數量及歷史": "艾菲拉僅有四座世界級核心穩定器，源自前文明四個不同的設置區域；災變後各設備周圍逐漸形成具有不同生態、地貌與文化的場所。",
-      "當代對應": "蘑丘生活圈、遺構之森、深境沼原與艾瑟波恩各有一座對應的核心穩定器；設備原始分區不以災後聚落或地形邊界判定。",
-      "運作分工": "穩定器調節魔素狀態，菌網負責跨地輸送與分流；穩定器本身不構成一套與菌網並行的人工跨地輸送網。",
-      "防護": "每座穩定器設有守脈機。"
+      "定義": "前文明共有四座世界級核心穩定器，分設蘑丘、遺構之森、深境沼原、艾瑟波恩；各有守脈機防護。人工設備調節能源狀態與輸配安全，菌網負責現代跨地傳輸，只有澄脈屬植物具有將暗魔素主動調質為穩定魔素的生理能力。",
+      "數量及歷史": "艾菲拉僅有四座世界級核心穩定器，由前文明在不同區域部署，災後仍維持部分現代環境所需功能。",
+      "運作分工": "核心控制流量、壓力與頻率，菌網負責現代跨地傳輸，澄脈屬植物負責真正的生命調質，各系統分工不同。",
+      "防護": "每座穩定器均有守脈機（古稱穩定器防護單元），可實施保護鎖定和風險隔離。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
         "數量及歷史",
-        "當代對應",
         "運作分工",
         "防護"
       ]
@@ -38,9 +38,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "正式古代名稱",
@@ -59,9 +61,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"
@@ -78,9 +82,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"

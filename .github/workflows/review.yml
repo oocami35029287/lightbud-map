@@ -25,4 +25,5 @@ jobs:
           path: |
             dist
             .test-output/browser-results.json
+            .test-output/intro-results.json
 # No scheduled Drive reads, deployment, merge, or writes to main.

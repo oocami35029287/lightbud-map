@@ -1,19 +1,21 @@
 [
   {
     "id": "ECO-001",
-    "name": "孢靈",
+    "name": "息孢",
     "fields": {
       "類別": "菌類生命階段。",
-      "定義": "菌類生命的幼體，可在自然環境生長，也可經居民培養；成長後可成為不同類型的菌精。",
-      "感受": "小型獨立生命可感知環境並產生基礎情緒。",
-      "環境活動": "部分孢靈以漂浮、發光的形態存在，並可攜帶魔素。"
+      "定義": "息孢是菌類生命的游離階段；一般個體在合適基質定著後成為持續生長的孢絲生命。少數具特殊生理適性的個體可長期維持游離形態並逐步成熟，不以聰明程度單獨決定能否游離。",
+      "感受": "息孢為有自主意識與感受的獨立生命，可自願與其他生命共鳴並拒絕協作。",
+      "環境活動": "一般息孢短期游離，可選擇性吸收、暫存、釋出有限穩定魔素，部分呈漂浮或發光外觀。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -24,18 +26,20 @@
   },
   {
     "id": "ECO-002",
-    "name": "菌精",
+    "name": "菌材",
     "fields": {
       "類別": "菌類成熟生命。",
-      "定義": "由孢靈成長而來的菌類生命，具有多種不同功能與形態，可經居民培養，也可自然生長。",
-      "集群": "菌精之間可以成簇、形成連結，產生更大的菌類生命結構。"
+      "定義": "菌材統稱孢絲生命持續生長形成的菌實、菌木、菌膜等器官與構造；它們與原有孢絲生命相連，可能依個體生理及環境條件生長、脫落或被合作採收，不是另有完整獨立人格的成熟菌類生命。",
+      "集群": "菌材是生命生長的器官與構造；多個孢絲生命持續連結，才可能形成具有集合意識的菌簇。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -48,15 +52,17 @@
     "name": "孢絲",
     "fields": {
       "類別": "菌類生命結構。",
-      "定義": "菌精群體形成或連結出的延伸結構；可穿行古代建築、地下縫隙與根系。",
-      "功能": "部分孢絲結構參與魔素與生命訊號的傳遞和跨區分流。"
+      "定義": "一般息孢定著於合適基質後可形成孢絲生命，原有孢絲不因後續形成成熟器官而必然消失；孢絲可沿土壤、遺構、牆面、根系與裂隙伸展。",
+      "功能": "孢絲可參與魔素、生命狀態及共鳴訊號傳遞，並持續生長出菌實、菌木與菌膜等器官。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -69,14 +75,16 @@
     "name": "菌簇",
     "fields": {
       "類別": "菌類集合生命。",
-      "定義": "由相互聯繫的菌類生命形成的集群。不同菌簇可以具有各自的群體意識。"
+      "定義": "多個孢絲生命透過持續連結可以形成菌簇，出現集中、統合的群體意識；並非每個個體生命都必經菌簇階段。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義"
@@ -95,9 +103,11 @@
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -112,14 +122,16 @@
     "fields": {
       "類別": "世界生命網路。",
       "定義": "連結艾菲拉各地菌類生命及其魔素交換的整體網路，可類比遍布世界的神經系統。",
-      "分工": "由菌王協調生命與感知訊號；孢絲負責輸送與分流；人工穩定器控制流量、壓力與頻率。"
+      "分工": "由菌王協調生命與感知訊號；孢絲負責輸送與分流；菌網儲能結節可暫存、緩衝與釋放魔素；人工穩定器控制流量、壓力與頻率。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -132,29 +144,24 @@
     "name": "菌王",
     "fields": {
       "類別": "菌類集合意識。",
-      "定義": "由大型菌類集群構成的強大集合意識體，是菌網生命訊號的主要協調中心。",
-      "本體位置": "地表巨大菌王株位於蘑丘，根部意識核心位於沉韻之庭；地表與根部屬同一菌王。",
-      "能力界線": "能感知、連結及協調菌網，但不能取代居民遠距修復古代機械本體。",
-      "形象與空間": "地表巨大菌株、地下根部的沉韻之庭與懸掛冠繭須分開理解；菌王集合意識寄居／凝聚於冠繭。冠繭不等同整株地表巨菌。"
+      "定義": "菌王由龐大的菌類生命集群構成，是菌網生命訊號協調的中樞，集中意識與組成生命的個體感受並存。",
+      "能力界線": "能協調菌網與生命訊號，不具將暗魔素淨化為穩定魔素的植物調質能力，亦不能遠距替居民修好古代機械。",
+      "形象與空間": "地表巨大菌株、第五層菌株根部的菌王深庭與庭中懸掛的冠繭，是同一生命系統中不同的形象與空間。菌王集合意識凝聚於冠繭，不等同整株地表巨菌。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
-        "本體位置",
-        "能力界線"
-      ],
-      "supplement": {
-        "url": "https://docs.google.com/document/d/1YJ61U2Nn5KLwvWrqYnzy-mriwn6Uyo6zHeOKCoe0tsg/edit",
-        "decision": "LB-071",
-        "status": "A",
-        "publication": "Session04 user-approved public scope; Bible sync pending"
-      }
+        "能力界線",
+        "形象與空間"
+      ]
     }
   },
   {
@@ -162,16 +169,18 @@
     "name": "聖樹",
     "fields": {
       "類別": "巨大生命體與魔素調和系統。",
-      "定義": "位於艾瑟波恩的巨大聖樹，與全域菌網及北方穩定器連結。",
-      "功能": "吸收失衡魔素並將其轉化為較穩定的魔素，是艾菲拉魔素維護的重要生命系統，也是艾瑟波恩長期魔素環境相對安定的重要原因。",
-      "地理": "聖樹生長及地勢變化形成艾瑟波恩的高地，其根部覆蓋前文明遺跡。"
+      "定義": "位於艾瑟波恩的巨大澄樹，與全域菌網及北方穩定器存在生態協作；樹冠覆蓋城邦，主幹、粗枝與氣根承載依樹而建的生活空間。",
+      "功能": "聖樹為澄脈屬中高效的生物調質者；只有澄脈屬植物能主動把暗魔素轉為較穩定魔素，普通其他植物與孢靈生命不具此能力。",
+      "地理": "古災變的地層差異抬升先形成岩層高地；後世聖樹的巨大主幹、根系與氣根街區塑造現代依樹城邦，樹冠蔭蔽居民生活區。高地地質成因與聖樹後期生長分屬不同時代。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
         "定義",
@@ -185,21 +194,19 @@
     "name": "毛鼠",
     "fields": {
       "類別": "沼原牧畜。",
-      "定義": "由深境沼原居民照顧的動物，性情溫馴、親人且黏人。",
-      "人物關聯": "CHR-003。",
-      "地區": "GEO-008。"
+      "定義": "由深境沼原居民照顧的動物，性情溫馴、親人且黏人。"
     },
     "status": "A",
     "visibility": "public",
     "source": {
-      "url": "https://github.com/oocami35029287/lightbud-dream/blob/main/world-bible/WORLD_BIBLE.md",
-      "revision": "main/1a6031917afc8f44543fb454a2556a8552b35a34",
-      "sha256": "a5b5307d27feff761db37ce412b56f3672806d96ebc174774cce0ff216883894",
+      "url": "https://github.com/oocami35029287/lightbud-dream/blob/8635e92887732ac49dd46d6776878648e6cdedef/world-bible/WORLD_BIBLE.md",
+      "revision": "main/8635e92887732ac49dd46d6776878648e6cdedef",
+      "blob": "623eb9300c1e57bfb061b2f8e45a9f7ba098533e",
+      "sha256": "482b319118c5b45e70053979b8a12afaa042823e734960cf974ab67bdcb0f4c8",
+      "structureSha256": "ea2eee3c5e48530d59cd038fcb6d7468a8377475a326ee3afdc49ed7d9f9e8b0",
       "fields": [
         "類別",
-        "定義",
-        "人物關聯",
-        "地區"
+        "定義"
       ]
     }
   }

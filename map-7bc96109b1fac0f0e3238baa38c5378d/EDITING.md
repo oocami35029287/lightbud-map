@@ -5,23 +5,25 @@
 ## 更新位置
 
 - content/public-policy.json：核准公開欄位、精簡摘錄、來源版本與 A 級補充決策。禁止將工作稿整份搬入。沒有納入白名單的內容不輸出。
-- tools/build-public.cjs：唯讀解析本機正式法典，產生 modules 各分類、catalog、relations 與 canon.js 相容橋接。原始法典保存在私人來源 repo，不放在網站 repo 或 dist。
+- tools/build-public.cjs：唯讀解析本機正式法典，產生介紹用 modules 各分類、catalog 與 relations；不再生成地圖的 canon.js。原始法典保存在私人來源 repo，不放在網站 repo 或 dist。
 - modules/catalog.json：生成資料唯一查詢入口；分類 JSON 由同一建置生成，不得手改世界設定。
 - modules/coordinates.json：美術座標基準 1538 × 1022；不是量測地理。疊图大小只表示畫面配置，不是空間真實比例。
 - modules/connections.json：只保留正式實體交通與生命功能關係；road、life、structure 狀態分別判斷。unassessed 表示未評估，不當作開通或封閉。
 - modules/assets.json：圖片 manifest。assets.js、layout.js、connections.js 是地圖同步橋接，驗證器檢查與 JSON 一致。
-- ui/site.js：導航、圖片、資料讀取與 ID 路由；ui/pages.js：圖鑑、搜尋、詳細面板、關係視圖與首頁。
+- ui/intro.js：介紹頁導航、圖片、資料與 ID 路由；ui/pages.js：圖鑑、搜尋、詳細面板、關係視圖與首頁。ui/site.js 保持地圖使用的原樣。
 - theme.css：共用主题；pages.css：圖誌／首頁；style.css：沿用地圖專用樣式。
 
 ## 可重複執行流程
 
 1. 讀取 GitHub main 世界法典與 Drive 最新 A；版本或範圍衝突先記錄，不自動採用 C/B。
-2. `node tools/compare-source.cjs <本機法典>`：產生已公開欄位的差異清單；不公開新正文。
+2. `node tools/compare-source.cjs <本機法典MD> <同版structure.json>`：產生已公開欄位的差異清單；不公開新正文。
 3. 人工審核公開白名單、摘錄、來源 revision／sha256 與 supplemental A。禁止用關鍵字測試替代語義審核。
-4. `node tools/build-public.cjs <本機法典>`：來源 hash 必須符合已審核 policy，生成公開資料與 content/diff-report.json。
+4. `node tools/build-public.cjs <本機法典MD> <同版structure.json>`：兩份來源 hash 必須符合已審核 policy，生成公開資料與 content/diff-report.json。
 5. `npm run check`、`npm run build`；安裝 Playwright 後 `npm run test:browser`。
 6. PR 內審核內容 Diff、圖像配置、來源差異及測試報告。GitHub workflow 僅驗證與上傳可下載 artifact，不直接發布。
-7. 作者審核合併後，既有 GitHub Pages main/root 更新同一網址。
+7. 在作者授權範圍內，驗收 PR 最新 head 與 CI 後合併；既有 GitHub Pages main/root 更新同一網址。
+
+介紹與地圖分流：本輪地圖保留 2026-10-12 的程式、來源快照、素材及共用樣式。地理介紹 ID 連至 civilization.html，不經地圖舊快照。content/atlas-baseline.json 的逐檔 SHA-256 保障地圖排除範圍；將來明確授權地圖任務時才調整基準。來源原文與完整結構 JSON 只在私人工作區讀取，不提交公開庫。
 
 ## 位置編輯
 

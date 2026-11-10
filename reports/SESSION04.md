@@ -1,6 +1,6 @@
-# Session 04｜世界觀網站 v1 候審交付
+# Session 04｜世界觀網站 v1 發布與歷史交付
 
-狀態：工程候審，PR #1：https://github.com/oocami35029287/lightbud-map/pull/1 。開發分支 feat/session04-world-site；沒有合併 main、沒有發布正式新版，也沒有修改世界法典。
+狀態更正：v1 已於 2026-10-12 經 [PR #1](https://github.com/oocami35029287/lightbud-map/pull/1) 合併發布，merge commit `289062b09cfa8b39b097a3ea50c085cf260dc7d0`。[Pages 部署](https://github.com/oocami35029287/lightbud-map/actions/runs/38202181405)成功，正式網址與路徑未變。以下保留 v1 當時的版本與驗收背景；本輪介紹更新見 [2026-11-10 報告](INTRO-20261110.md)。世界法典未修改。
 
 ## 核對版本與既有工作
 
@@ -50,7 +50,7 @@
 - 互動測試包含搜尋、詳細面板／Escape、關係模式、永久 ID 深連結、縮放、底圖與菌網獨立圖層、疊圖座標／顯示、匯出、匯入及原子拒絕錯誤匯入、手機拖曳／鍵盤平移、reduced-motion。
 - GitHub PR CI 配置：資料驗證、建置、瀏覽器回歸、可下載 artifact；不排程讀 Drive、不自動 merge、不部署。遠端 CI 實際結果另依 PR checks 記錄。
 
-## 限制與待審
+## v1 驗收時的限制
 
 - 新節點／疊圖美術對齊仍需作者檢視；所有坐標是美術呈現，不是地理測量。
 - 未定稿角色插畫按作者最新指示留空；不影響人物資料或未來 manifest 替換。
@@ -58,9 +58,9 @@
 - 沒有核准的古代建築工程剖面，使用正式地理層級示意；不補未知技術原理。
 - version 2 位置檔不直接套入新版底圖，需人工遷移；原檔仍可回退至舊 main 使用。
 - 手機雙指處理沿用既有實作；已測單指拖曳與縮放按鈕，實體裝置雙指手勢仍建議作者驗看。
-- 正式發布前作者審核內容、美術位置與補充 A 的採用範圍，再合併 PR。
+- 當時候審內容已依作者 2026-10-12 發布指示合併；這不是仍待發布的事項。
 
-## 測試版本使用
+## 本機測試方式
 
 下載本次交付 ZIP 後在解壓根目錄執行 `python -m http.server 8000`；若使用 GitHub PR workflow 的 lightbud-world-site-review artifact，須先進入其中的 `dist/` 目錄，再執行同一指令。開啟 `http://localhost:8000/map-7bc96109b1fac0f0e3238baa38c5378d/`。ES Modules／JSON fetch 需 HTTP，不能直接 file:// 打開。
 
